@@ -1,0 +1,1248 @@
+/* START header */
+
+.header-label-image-xl {
+    display: block;
+    justify-self: center;
+}
+
+.header-label-image-sm {
+    justify-self: center;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-box {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 28px;
+}
+
+.hamburger-inner {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #FFF;
+    left: 0;
+    top: 50%;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.hamburger.active .hamburger-inner {
+    background-color: transparent;
+}
+
+.hamburger.active .hamburger-inner::before {
+    transform: translateY(14px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner::after {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+.hamburger-inner::before {
+    top: -14px;
+}
+
+.hamburger-inner::after {
+    top: 14px;
+}
+
+.header-user-items {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.header-user-items-coop {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.my-icons-header {
+    background-color: #3F3124;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+}
+
+.header-button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3F3124;
+}
+
+.header-user-items-coop-counter {
+    color: #F4FAFF;
+    font-size: 20px;
+    font-family: "TT Commons Pro Trial Variable";
+
+}
+
+.content-visible-sm {
+    display: none;
+}
+
+.my-icons-header-mobile {
+    color: #0A488A;
+    font-size: 26px;
+}
+
+.my-icons-user {
+    font-size: 16px;
+    border-radius: 50%;
+    border: solid 2px;
+    padding: 5px;
+}
+
+.center-item {
+    justify-self: center;
+}
+
+/* END header */
+
+/* START common-menu */
+
+.shadow-block {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.62;
+}
+
+.menu-catalog-button {
+    border: none;
+    background: none;
+    padding: 20px 0 20px 60px;
+}
+
+.menu-catalog-button-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-content-button-text {
+    font-family: 'HeliosCond';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #3F3124;
+}
+
+.my-icons-menu {
+    font-size: 18px;
+}
+
+.menu-content-text {
+    font-family: 'HeliosCond';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    padding: 20px 20px 20px 60px;
+}
+
+.media-correct {
+    display: none;
+}
+
+.menu-content-link {
+    text-decoration: none;
+    color: #3F3124;
+    cursor: pointer;
+}
+
+.menu-content-contact-text {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 400;
+    font-size: 24px;
+    padding: 14px 0 0 60px;
+}
+
+.menu-content-link-contact {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 14px;
+}
+
+.menu {
+    background-color: #FFFFFF;
+    z-index: 10;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    padding: 40px 0 60px;
+    max-width: 480px;
+    left: -100%;
+}
+
+.menu-block {
+    position: fixed;
+    top: 104px;
+    left: -100%;
+    z-index: 2;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.menu-block.active {
+    left: 0%;
+    visibility: visible;
+}
+
+.menu-active {
+    left: 0%;
+}
+
+.menu-hr {
+    background-color: #3F3124;
+    height: 1px;
+    margin: 40px 0 40px;
+}
+
+.menu-contact {
+    margin-left: 145px;
+}
+
+.menu-contact-link {
+    text-decoration: none;
+    color: #3F3124;
+}
+
+.my-icons-menu-contact {
+    font-size: 40px;
+    margin-right: 24px;
+}
+
+.menu-catalog-tooltip {
+    transition: all 0.3s ease;
+    padding: 0 0 0 80px;
+    display: none;
+    opacity: 0;
+    text-align: left;
+    animation: fadeEffect 1s;
+}
+
+.menu-catalog-tooltip-text {
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 5px 0;
+}
+
+.menu-catalog-tooltip-text:hover {
+    color: black;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-catalog-button:hover {
+    padding-bottom: 0;
+}
+
+.menu-catalog-button:hover .menu-catalog-tooltip {
+    display: block;
+    opacity: 1;
+}
+
+/* END common-menu */
+
+/* START menu-log */
+
+.menu-user {
+    position: fixed;
+    top: 0%;
+    z-index: 11;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    max-width: 729px;
+    padding: 46px 84px 202px 107px;
+    right: -100%;
+}
+
+.menu-user.active {
+    right: 0%;
+}
+
+.menu-log {
+    position: fixed;
+    top: 104px;
+    right: -100%;
+    z-index: 2;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.menu-log.active {
+    right: 0%;
+    visibility: visible;
+}
+
+.close-menu-user {
+    margin: 0 -37px 78px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.registration-label {
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    color: #3F3124;
+    max-width: 440px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    padding-bottom: 48px;
+}
+
+.registration-input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.registration-input-item {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #3F3124;
+    padding: 0px 0px 0px 26px;
+    height: 62px;
+    border-color: #486284;
+    border-radius: 4px;
+    border: solid 1px;
+}
+
+.registration-input-item::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #898989;
+    padding: 16px 0 16px;
+}
+
+.registration-button {
+    color: #FFFFFF;
+    background-color: #806356;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    letter-spacing: -1px;
+    padding: 16px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.registration-link {
+    text-decoration: none;
+    padding: 16px 0 32px;
+    max-width: 102px;
+    margin: 0 auto;
+    display: block;
+    color: #555555;
+    opacity: 1;
+    font-size: 20px;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+.registration-info {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #555555;
+}
+
+.hamburger-close-reg-inner::before,
+.hamburger-close-reg-inner::after {
+    background-color: #000000;
+    height: 1px;
+}
+
+.hamburger-close-box {
+    width: 20px;
+    height: 20px;
+}
+
+/* END menu-log */
+
+/* START bag shopping */
+
+.bag-shopping {
+    max-width: 729px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 11;
+    transition: all 0.5s ease-in-out;
+}
+
+.bag-shopping-close-button {
+    position: relative;
+    padding: 60px 0 50px 105px;
+}
+
+.close-button-item {
+    position: absolute;
+    top: 46px;
+    right: 52px;
+}
+
+/* END bag shopping */
+
+/* START Footer */
+
+.footer-text {
+    color: #F4FAFF;
+    font-size: 16px;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.footer-link-correct {
+    text-decoration: none;
+}
+
+.footer-title {
+    color: #F4FAFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+.footer-contact-link {
+    color: #F4FAFF;
+    text-decoration: none;
+}
+
+.footer-icons-position {
+    display: flex;
+    gap: 26px;
+}
+
+.footer-icons {
+    font-size: 45px;
+    color: #F4FAFF;
+}
+
+.footer-number {
+    text-decoration: none;
+}
+
+.footer-hr {
+    background-color: #FFFFFF;
+    opacity: 0.16;
+    height: 2px;
+    width: 100%;
+    margin: 27px 0 37px;
+}
+
+.footer-title-politic-left {
+    color: #F4FAFF;
+    font-size: 16px;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.footer-title-politic-right {
+    color: #F4FAFF;
+    font-size: 16px;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 500;
+    line-height: 150%;
+    float: right;
+    text-decoration: none;
+}
+
+.footer-title-politic {
+    color: #F4FAFF;
+    font-size: 16px;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.footer-politic-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-item-position {
+    margin: 28px 0 32px;
+}
+
+.footer-block-position {
+    margin-bottom: 22px;
+}
+
+.footer-icons-contact-media {
+    display: none;
+}
+
+.footer-title-politic-media {
+    display: none;
+}
+
+/* END Footer */
+
+/* START banner */
+
+.banner {
+    background-image: url(../images/bannerHome.png);
+    height: 798px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.banner-content {
+    padding: 200px 0;
+    max-width: 534px;
+}
+
+.banner-content-info {
+    font-family: 'TT Commons Pro Trial Variable';
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 121.2%;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.banner-info-title {
+    margin: 0;
+    font-family: 'HeliosCond';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 121.2%;
+    color: #FFFFFF;
+    padding-bottom: 4px;
+}
+
+.banner-info-text {
+    font-family: 'TT Commons Pro Trial Variable';
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 44px;
+}
+
+.banner-content-link {
+    padding: 10px 40px;
+    font-family: 'TT Commons Pro Trial Variable';
+    color: #3F3124;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    line-height: 150%;
+    width: 150px;
+}
+
+/* END banner */
+
+/* START section super-corm*/
+
+.super-corm {
+    padding: 69px 0 38px;
+}
+
+.super-corm-title {
+    justify-self: center;
+    padding-bottom: 29px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1px;
+}
+
+.super-corm-content {
+    background-color: #806356;
+    border-radius: 50%;
+    width: 159px;
+    height: 159px;
+    cursor: pointer;
+}
+
+.super-corm-content:hover {
+    background-color: #3F3124;
+}
+
+.super-corm-content-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.super-corm-tooltip {
+    background-color: #F0E5E3;
+    border-radius: 8px;
+    padding: 36px 0 20px;
+    margin-top: 36px;
+    width: 222px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    position: relative;
+}
+
+.set-tooltip {
+    place-items: anchor-center;
+}
+
+.set-tooltip:hover .super-corm-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.super-corm-tooltip-title {
+    font-family: 'HeliosCond';
+    color: #3F3124;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    opacity: 0.7;
+    justify-self: center;
+}
+
+.super-corm-tooltip-text {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    color: #3F3124;
+    font-weight: 500;
+    opacity: 0.7;
+    padding-left: 10px;
+}
+
+.triangle-tooltip {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #F0E5E3;
+    top: -15%;
+    left: 41%;
+}
+
+/* END section super-corm*/
+
+/* START section shop*/
+
+.shop {
+    margin: 0 0 105px;
+}
+
+.shop-title {
+    justify-self: center;
+    padding-bottom: 38px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -3px;
+}
+
+.shop-list {
+    background-color: #F0E5E3;
+    border-radius: 10px;
+    padding: 25px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 448px;
+    cursor: pointer;
+}
+
+.shop-list-title {
+    color: #806356;
+    font-size: 32px;
+    font-family: 'HeliosCond';
+    font-weight: 700;
+    max-width: 230px;
+}
+
+.shop-list-button {
+    background-color: #806356;
+    color: #FFFFFF;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 32px;
+    font-family: 500;
+    border-radius: 4px;
+    padding: 10px 0 16px;
+    width: 100%;
+    margin-top: 11px;
+    border: none;
+}
+
+.media-shop {
+    display: none;
+}
+
+/* END section shop*/
+
+/* START info section*/
+
+.info {
+    background-image: url(../images/inFoBlockBackgroundImage.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 71px;
+    margin-bottom: 40px;
+}
+
+.info-title {
+    display: flex;
+    gap: 95px;
+    padding: 43px 0 12px;
+    position: relative;
+}
+
+.info-title-text {
+    color: #F0E6E4;
+    font-family: 'HeliosCond';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 121.2%;
+}
+
+.info-line {
+    position: absolute;
+    width: 715px;
+    height: 2px;
+    background-color: white;
+    opacity: 1;
+    top: 80%;
+    left: -3%;
+}
+
+.info-content-title {
+    padding: 83px 0 30px;
+    max-width: 426px;
+    color: #FFFFFF;
+    font-family: 'HeliosCond';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 121.2%;
+}
+
+.info-content-text {
+    max-width: 470px;
+    color: #FFFFFF;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 85px;
+}
+
+.info-content-link {
+    color: #3F3124;
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width: 192px;
+    text-decoration: none;
+    text-align-last: center;
+}
+
+/* END info section*/
+
+/* START promotion section*/
+
+.promo-content {
+    background-image: url(../images/promoContent_1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    padding: 26px 0 64px 29px;
+    margin: 40px 0 179px;
+}
+
+.promotion-first {
+    background-image: url(../images/promoContent_2.png);
+}
+
+.promo-content-title {
+    font-family: 'HeliosCond';
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 115%;
+    max-width: 272px;
+    color: #FFF;
+    letter-spacing: 1px;
+    padding: 46px 0 43px;
+}
+
+.promo-content-text {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 150%;
+    max-width: 231px;
+}
+
+.promotion-text {
+    padding: 10px 0 20px;
+    color: #1A202C;
+    font-family: 'HeliosCond';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 530px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* END promotion section*/
+
+/* START news section*/
+
+.news-content {
+    background-color: #F0E5E3;
+    border-radius: 10px;
+    padding: 35px 43px 35px 31px;
+    margin: 48px 0 171px;
+}
+
+.news-content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-content-block-title {
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.news-content-block-date {
+    color: #3F3124;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.news-content-title {
+    color: #3F3124;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+}
+
+.news-content-text {
+    color: #3F3124;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 21px 0 17px;
+}
+
+/* END news section*/
+
+/* START swipers*/
+
+.my-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.news-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.catalog-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    height: 100%;
+}
+
+.news-swiper .my-swiper-button-prev {
+    position: absolute;
+    bottom: 73px;
+    right: 195px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.news-swiper .my-swiper-button-next {
+    position: absolute;
+    bottom: 73px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.news-swiper .swiper-pagination {
+    text-align: left;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    bottom: 73px;
+}
+
+.news-swiper .swiper-scrollbar {
+    width: 135px;
+    border-radius: 6px;
+    height: 15px;
+    border: none;
+    background: none;
+    top: 84%;
+    z-index: 1;
+    left: 0%;
+}
+
+.news-swiper .swiper-scrollbar-drag {
+    background-color: #392930;
+    border: none;
+}
+
+.my-swiper .my-swiper-button-prev {
+    position: absolute;
+    bottom: 73px;
+    right: 195px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.my-swiper .my-swiper-button-next {
+    position: absolute;
+    bottom: 73px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.my-swiper .swiper-pagination {
+    text-align: left;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    bottom: 73px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #C4C4C4;
+    transition: all 0.3s ease-in-out;
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 15px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 15px));
+    border-radius: 50%;
+    margin: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #392930;
+    padding: 0 15px;
+    border-radius: 7.5px;
+    width: 45px;
+}
+
+.catalog-swiper .swiper-scrollbar {
+    width: 100%;
+    border-radius: 5px;
+    height: 5px;
+    border: none;
+    background-color: #EEE6E4;
+    bottom: -30px;
+    z-index: 1;
+    left: 0%;
+}
+
+.catalog-swiper .swiper-scrollbar-drag {
+    background-color: #3F3124;
+    border: none;
+    border-radius: 5px;
+    height: 5px;
+}
+
+.catalog-swiper .my-swiper-button-prev {
+    position: absolute;
+    bottom: 73px;
+    right: 195px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.catalog-swiper .my-swiper-button-next {
+    position: absolute;
+    bottom: 73px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.catalog-swiper .swiper-pagination {
+    text-align: left;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    bottom: 73px;
+}
+
+/* END swipers*/
+
+/* START catalog-list*/
+
+.catalog {
+    padding: 40px 0 84px;
+}
+
+.catalog-main-title {
+    padding-bottom: 10px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1px;
+    max-width: 372px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.catalog-main-title-text {
+    padding-bottom: 71px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 530px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.catalog-tablinks {
+    border: none;
+    background: none;
+    color: #747880;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.catalog-tablinks.active {
+    color: #3F3124;
+    font-weight: 600;
+}
+
+.catalog-tablinks-hr {
+    display: none;
+    position: absolute;
+    top: 146%;
+    width: 100%;
+    left: 0%;
+    height: 4px;
+    background-color: #3F3124;
+    padding: 0px;
+    opacity: 1;
+}
+
+.catalog-tablinks.active .catalog-tablinks-hr {
+    display: block;
+}
+
+.catalog-content-list {
+    background-color: #EEE6E4;
+    border-radius: 10px;
+    padding: 19px 24px 24px;
+    box-sizing: border-box;
+    height: 388px;
+}
+
+.catalog-content-top-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-content-top-item-title {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 108%;
+    color: #1A202C;
+    max-width: 159px;
+    height: 25px;
+}
+
+.catalog-content-bottom-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-content-bottom-item-price {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A202C;
+}
+
+.catalog-content-bottom-item-button {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #1A202C;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+}
+
+.catalog-content-list-center {
+    justify-self: center;
+    height: 266px;
+}
+
+.img-custom {
+    height: 100%;
+}
+
+.catalog-add-item {
+    margin: 100px 0 84px;
+    justify-self: center;
+}
+
+.catalog-add-more {
+    background-color: white;
+    border: none;
+    color: #0A488A;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.catalog-hr {
+    margin: 35px 0 48px;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.catalog-swiper-block {
+    display: none;
+    padding: 38px 0 70px;
+}
+
+.catalog-my-icons {
+    font-size: 20px;
+}
+
+/* END catalog-list*/

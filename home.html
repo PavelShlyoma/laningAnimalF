@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap-extend.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <script src="./js/libs/swiper.js"></script>
+    <script src="./js/mySwiper.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container content-visible-xl">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-2">
+                    <button class="hamburger" onclick="setMenuActive(0)">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-8">
+                    <a href="./home.html">
+                        <img class="header-label-image-xl" src="./images/labelHomeXl.svg" alt="Амири">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <div class="header-user-items">
+                        <div>
+                            <div class="header-user-items-coop">
+                                <button class="header-button">
+                                    <i class="fa-regular fa-heart my-icons-header"></i>
+                                </button>
+                                <div class="header-user-items-coop-counter">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header-user-items-coop">
+                                <button class="header-button">
+                                    <i class="fa-solid fa-bag-shopping my-icons-header"></i>
+                                </button>
+                                <div class="header-user-items-coop-counter">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="buttonLog" class="header-button">
+                                <i class="fa-regular fa-circle-user my-icons-header"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-visible-sm">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-5">
+                        <div class="center-item">
+                            <img class="header-label-image-sm img-fluid" src="./images/labelHomeSm.svg" alt="Амири">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <i class="fa-solid fa-cart-shopping my-icons-header-mobile"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <i class="fa-solid fa-user my-icons-header-mobile my-icons-user"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <button class="hamburger" onclick="setMenuActive(1)">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h3 class="banner-content-info">Качественное питание для вашего верного друга</h3>
+                <h2 class="banner-info-title">Полнорационный сухой и влажный корм для кошек и собак</h2>
+                <p class="banner-info-text">Полнорационный корм Амири подходит для ежедневного кормления животных. В
+                    ассортименте продуктов учтены
+                    особенности разных пород и возрастных групп животных. Сбалансированное питание, высококачественные
+                    ингредиенты и комплекс витаминов и минералов способствуют здоровому росту и развитию животного.</p>
+                <div>
+                    <a class="banner-content-link" href="./catalog.html">Каталог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="super-corm">
+        <h2 class="super-corm-title">КОРМА АМИРИ СУПЕРПРЕМИУМ</h2>
+        <div class=" container">
+            <div class="row gy-2 justify-content-between align-items-center">
+                <div class="col-xl-2 col-md-4 set-tooltip">
+                    <div class="super-corm-content">
+                        <div class="super-corm-content-position">
+                            <img class="super-corm-image" src="./images/superCormHome_1.png" alt="корм">
+                        </div>
+                    </div>
+                    <div class="super-corm-tooltip">
+                        <div class="triangle-tooltip"></div>
+                        <h2 class="super-corm-tooltip-title">Lorem ipsum</h2>
+                        <p class="super-corm-tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            lab</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 set-tooltip">
+                    <div class="super-corm-content">
+                        <div class="super-corm-content-position">
+                            <img class="super-corm-image" src="./images/superCormHome_2.png" alt="корм">
+                        </div>
+                    </div>
+                    <div class="super-corm-tooltip">
+                        <div class="triangle-tooltip"></div>
+                        <h2 class="super-corm-tooltip-title">Lorem ipsum</h2>
+                        <p class="super-corm-tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            lab</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 set-tooltip">
+                    <div class="super-corm-content">
+                        <div class="super-corm-content-position">
+                            <img class="super-corm-image" src="./images/superCormHome_3.png" alt="корм">
+                        </div>
+                    </div>
+                    <div class="super-corm-tooltip">
+                        <div class="triangle-tooltip"></div>
+                        <h2 class="super-corm-tooltip-title">Lorem ipsum</h2>
+                        <p class="super-corm-tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            lab</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 set-tooltip">
+                    <div class="super-corm-content">
+                        <div class="super-corm-content-position">
+                            <img class="super-corm-image" src="./images/superCormHome_4.png" alt="корм">
+                        </div>
+                    </div>
+                    <div class="super-corm-tooltip">
+                        <div class="triangle-tooltip"></div>
+                        <h2 class="super-corm-tooltip-title">Lorem ipsum</h2>
+                        <p class="super-corm-tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            lab</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 set-tooltip">
+                    <div class="super-corm-content">
+                        <div class="super-corm-content-position">
+                            <img class="super-corm-image" src="./images/superCormHome_5.png" alt="корм">
+                        </div>
+                    </div>
+                    <div class="super-corm-tooltip">
+                        <div class="triangle-tooltip"></div>
+                        <h2 class="super-corm-tooltip-title">Lorem ipsum</h2>
+                        <p class="super-corm-tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            lab</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 set-tooltip">
+                    <div class="super-corm-content">
+                        <div class="super-corm-content-position">
+                            <img class="super-corm-image" src="./images/superCormHome_6.png" alt="корм">
+                        </div>
+                    </div>
+                    <div class="super-corm-tooltip">
+                        <div class="triangle-tooltip"></div>
+                        <h2 class="super-corm-tooltip-title">Lorem ipsum</h2>
+                        <p class="super-corm-tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            lab</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="shop" class="shop">
+        <h2 class="shop-title">Интернет-магазин</h2>
+        <div class="container xl-shop">
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="shop-list">
+                        <h3 class="shop-list-title">Сухой корм для кошек</h3>
+                        <img class="img-fluid" src="./images/catalogImage_1.png" alt="1">
+                    </div>
+                    <button class="shop-list-button">Открыть</button>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="shop-list">
+                        <h3 class="shop-list-title">Влажный корм для кошек</h3>
+                        <img class="img-fluid" src="./images/catalogImage_2.png" alt="2">
+                    </div>
+                    <button class="shop-list-button">Открыть</button>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="shop-list">
+                        <h3 class="shop-list-title">Сухой корм для собак</h3>
+                        <img class="img-fluid" src="./images/catalogImage_3.png" alt="3">
+                    </div>
+                    <button class="shop-list-button">Открыть</button>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="shop-list">
+                        <h3 class="shop-list-title">Наполнитель для кошачьего туалета</h3>
+                        <div class="shop-list-image">
+                        </div>
+                    </div>
+                    <button class="shop-list-button">Открыть</button>
+                </div>
+            </div>
+        </div>
+        <!-- Slider main container -->
+        <div class="container media-shop">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="shop-list">
+                            <h3 class="shop-list-title">Сухой корм для кошек</h3>
+                            <img class="img-fluid" src="./images/catalogImage_1.png" alt="1">
+                        </div>
+                        <button class="shop-list-button">Открыть</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-list">
+                            <h3 class="shop-list-title">Влажный корм для кошек</h3>
+                            <img class="img-fluid" src="./images/catalogImage_2.png" alt="2">
+                        </div>
+                        <button class="shop-list-button">Открыть</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-list">
+                            <h3 class="shop-list-title">Сухой корм для собак</h3>
+                            <img class="img-fluid" src="./images/catalogImage_3.png" alt="3">
+                        </div>
+                        <button class="shop-list-button">Открыть</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-list">
+                            <h3 class="shop-list-title">Наполнитель для кошачьего туалета</h3>
+                        </div>
+                        <button class="shop-list-button">Открыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="info-title">
+                <div class="info-title-text">ЦЕННОСТИ</div>
+                <div class="info-title-text">ВИДЕНИЕ</div>
+                <div class="info-title-text">МИССИЯ</div>
+                <hr class="info-line">
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <h2 class="info-content-title">Полнорационный сухой и влажный корм для кошек и собак</h2>
+                    <p class="info-content-text">Полнорационный корм Амири подходит для ежедневного кормления животных.
+                        В ассортименте продуктов учтены особенности разных пород и возрастных групп животных.
+                        Сбалансированное питание, высококачественные ингредиенты и комплекс витаминов и минералов
+                        способствуют здоровому росту и развитию животного.</p>
+                    <a class="info-content-link" href="./about.html">О компании</a>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <img class="img-fluid" src="./images/infoBlockImage.png" alt="DoG">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="stock" class="promotion">
+        <div class="container">
+            <h2 class="shop-title">Акции</h2>
+            <p class="promotion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut lab</p>
+            <div class="my-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="promo-content">
+                            <div>
+                                <img class="img-fluid media-image-control" src="./images/promoLabel.svg" alt="">
+                            </div>
+                            <h2 class="promo-content-title">
+                                Название акции
+                            </h2>
+                            <p class="promo-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="promo-content promotion-first">
+                            <div>
+                                <img class="img-fluid media-image-control" src="./images/promoLabel.svg" alt="1">
+                            </div>
+                            <h2 class="promo-content-title">
+                                Название акции
+                            </h2>
+                            <p class="promo-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="promo-content">
+                            <div>
+                                <img class="img-fluid media-image-control" src="./images/promoLabel.svg" alt="">
+                            </div>
+                            <h2 class="promo-content-title">
+                                Название акции
+                            </h2>
+                            <p class="promo-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="promo-content promotion-first">
+                            <div>
+                                <img class="img-fluid media-image-control" src="./images/promoLabel.svg" alt="">
+                            </div>
+                            <h2 class="promo-content-title">
+                                Название акции
+                            </h2>
+                            <p class="promo-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="my-swiper-button-prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="my-swiper-button-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </section>
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="shop-title">Новости</h2>
+            <p class="promotion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut lab</p>
+            <div class="news-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="news-content">
+                            <div class="news-content-block">
+                                <h2 class="news-content-block-title">
+                                    Заголовок
+                                </h2>
+                                <div class="news-content-block-date">
+                                    04.06.2024
+                                </div>
+                            </div>
+                            <h3 class="news-content-title">Подзаголовок</h3>
+                            <p class="news-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-content">
+                            <div class="news-content-block">
+                                <h2 class="news-content-block-title">
+                                    Заголовок
+                                </h2>
+                                <div class="news-content-block-date">
+                                    04.06.2024
+                                </div>
+                            </div>
+                            <h3 class="news-content-title">Подзаголовок</h3>
+                            <p class="news-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-content">
+                            <div class="news-content-block">
+                                <h2 class="news-content-block-title">
+                                    Заголовок
+                                </h2>
+                                <div class="news-content-block-date">
+                                    04.06.2024
+                                </div>
+                            </div>
+                            <h3 class="news-content-title">Подзаголовок</h3>
+                            <p class="news-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-content">
+                            <div class="news-content-block">
+                                <h2 class="news-content-block-title">
+                                    Заголовок
+                                </h2>
+                                <div class="news-content-block-date">
+                                    04.06.2024
+                                </div>
+                            </div>
+                            <h3 class="news-content-title">Подзаголовок</h3>
+                            <p class="news-content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut lab
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="my-swiper-button-prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="my-swiper-button-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </section>
+    <div id="menu" class="menu-block">
+        <div class="shadow-block">
+        </div>
+        <div class="menu">
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="./home.html">Главная</a>
+            </nav>
+            <button class="menu-catalog-button xl-correct">
+                <div class="menu-catalog-button-item">
+                    <nav class="menu-content-button-text">
+                        Каталог
+                    </nav>
+                    <i class="fa-solid fa-chevron-down my-icons-menu"></i>
+                </div>
+                <div class="menu-catalog-tooltip">
+                    <nav class="menu-catalog-tooltip-text">Сухой корм для кошек</nav>
+                    <nav class="menu-catalog-tooltip-text">Влажный корм для кошек</nav>
+                    <nav class="menu-catalog-tooltip-text">Сухой корм для собак</nav>
+                    <nav class="menu-catalog-tooltip-text">Наполнитель для кошачьего туалета</nav>
+                </div>
+            </button>
+            <nav class="menu-content-text">
+                <a class="menu-content-link" href="./about.html">О нас</a>
+            </nav>
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="#">Новости</a>
+            </nav>
+            <nav class="menu-content-text">
+                <div  id="stockBtn" class="menu-content-link">Акции</div>
+            </nav>
+            <nav id="shopBtn" class="menu-content-text media-correct">
+                <div class="menu-content-link">Интернет-магазин</div>
+            </nav>
+            <nav id="newsBtn" class="menu-content-text xl-correct">
+                <div class="menu-content-link">Новости</div>
+            </nav>
+            <nav class="menu-content-text">
+                <a class="menu-content-link" href="#">Благотворительность</a>
+            </nav>
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="./contacts.html">Контакты</a>
+            </nav>
+            <nav class="menu-content-contact-text">
+                <div><a class="menu-content-link-contact" href="./contacts.html">Доставка</a></div>
+                <div><a class="menu-content-link-contact" href="./contacts.html">Контакты</a></div>
+            </nav>
+            <hr class="menu-hr">
+            <div class="menu-contact">
+                <a class="menu-contact-link" href="#">
+                    <i class="fa-brands fa-telegram my-icons-menu-contact"></i>
+                </a>
+                <a class="menu-contact-link" href="#">
+                    <i class="fa-brands fa-vk my-icons-menu-contact"></i>
+                </a>
+                <a class="menu-contact-link" href="#">
+                    <i class="fa-brands fa-instagram my-icons-menu-contact"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="menuUserLog" class="menu-log">
+        <div class="shadow-block">
+        </div>
+        <div class="menu-user">
+            <div class="close-menu-user">
+                <button class="hamburger active">
+                    <span class="hamburger-box hamburger-close-box">
+                        <span class="hamburger-inner hamburger-close-reg-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <label class="registration-label" for="userEmail">войти или зарегистрироваться</label>
+            <form class="registration-input-block" action="#">
+                <input class="registration-input-item" type="email" id="userEmail" placeholder="email">
+                <input class="registration-input-item" type="password" id="userPassword" placeholder="пароль">
+                <button class="registration-button">Вход</button>
+            </form>
+            <a class="registration-link" href="./registration.html">Регистрация</a>
+            <div class="registration-info">Нажимая на кнопку «Получить код», я даю согласие на обработку своих
+                персональных данных в соответствии с политикой обработки персональных данных</div>
+        </div>
+    </div>
+    <div id="bagShopping" class="menu-log">
+        <div class="shadow-block">
+        </div>
+        <div class="bag-shopping">
+            <div class="bag-shopping-close-button">
+                <div class="close-button-item">
+                    <button class="hamburger active">
+                        <span class="hamburger-box hamburger-close-box">
+                            <span class="hamburger-inner hamburger-close-reg-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h2>Корзина</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div>
+                        <a href="./home.html"><img src="./images/labelFooter.svg" alt="footer"></a>
+                    </div>
+                    <p class="footer-text footer-item-position">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut
+                        labore et </p>
+                    <div class="footer-icons-position">
+                        <a class="footer-contact-link" href="#">
+                            <i class="fa-brands fa-telegram footer-icons"></i>
+                        </a>
+                        <a class="footer-contact-link" href="#">
+                            <i class="fa-brands fa-vk footer-icons"></i>
+                        </a>
+                        <a class="footer-contact-link" href="#">
+                            <i class="fa-brands fa-instagram footer-icons"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <h2 class="footer-title">Главная</h2>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="./about.html">О Нас</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Благотворительность</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Новости</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Акции</a>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <h2 class="footer-title">Интернет-магазин</h2>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Сухой корм для кошек</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Корм для собак</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Влажный корм для кошек</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Наполнитель</a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2">
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="footer-text footer-block-position">
+                        101000, г. Город, ул. Улица , дом.х, антр. х, эт.
+                    </div>
+                    <div class="footer-block-position">
+                        <div>
+                            <a class="footer-text footer-number" href="tel:+79805520101">+7 (980) 552 01 01</a>
+                        </div>
+                        <div>
+                            <a class="footer-text" href="#">komdyr@borpet.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer-block-position">
+                        <div>
+                            <a class="footer-text footer-number" href="tel:+79805520101">+7 (980) 552 01 01</a>
+                        </div>
+                        <div>
+                            <a class="footer-text" href="#">manager@borpet.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-icons-position footer-icons-contact-media">
+                <a class="footer-contact-link" href="#">
+                    <i class="fa-brands fa-telegram footer-icons"></i>
+                </a>
+                <a class="footer-contact-link" href="#">
+                    <i class="fa-brands fa-vk footer-icons"></i>
+                </a>
+                <a class="footer-contact-link" href="#">
+                    <i class="fa-brands fa-instagram footer-icons"></i>
+                </a>
+            </div>
+            <div class="footer-politic-center">
+                <div class="footer-title-politic-media">
+                    <div>
+                        <a class=" footer-title-politic" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-6 col-xl-6">
+                    <div class="footer-title-politic-left">©2024 Company Name. All rights reserved</div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-6">
+                    <div>
+                        <a class="footer-title-politic-right" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+
+</html>

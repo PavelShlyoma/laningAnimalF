@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap-extend.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <script src="./js/libs/swiper.js"></script>
+    <script src="./js/mySwiper.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container content-visible-xl">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-2">
+                    <button class="hamburger" onclick="setMenuActive(0)">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-8">
+                    <a href="./home.html">
+                        <img class="header-label-image-xl" src="./images/labelHomeXl.svg" alt="Амири">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <div class="header-user-items">
+                        <div>
+                            <div class="header-user-items-coop">
+                                <button class="header-button">
+                                    <i class="fa-regular fa-heart my-icons-header"></i>
+                                </button>
+                                <div class="header-user-items-coop-counter">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header-user-items-coop">
+                                <button class="header-button">
+                                    <i class="fa-solid fa-bag-shopping my-icons-header"></i>
+                                </button>
+                                <div class="header-user-items-coop-counter">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="buttonLog" class="header-button">
+                                <i class="fa-regular fa-circle-user my-icons-header"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-visible-sm">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-5">
+                        <div class="center-item">
+                            <img class="header-label-image-sm img-fluid" src="./images/labelHomeSm.svg" alt="Амири">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <i class="fa-solid fa-cart-shopping my-icons-header-mobile"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <i class="fa-solid fa-user my-icons-header-mobile my-icons-user"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <button class="hamburger" onclick="setMenuActive(1)">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <h1 class="catalog-main-title">
+            Каталог товаров
+        </h1>
+        <h3 class="catalog-main-title-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <button onclick="openCatalog(event, 'dryForCats')" class="catalog-tablinks">
+                        Сухой корм для кошек
+                        <hr class="catalog-tablinks-hr">
+                    </button>
+                    <div class="catalog-swiper-block">
+                        <div class="catalog-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Лосось</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productSalmon.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Ягненок</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productLamb.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Индейка с рисом</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productTurkeyWithRice.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Ягненок</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productLamb.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <button onclick="openCatalog(event, 'wetForCats')" class="catalog-tablinks">
+                        Влажный корм для кошек
+                        <hr class="catalog-tablinks-hr">
+                    </button>
+                    <div class="catalog-swiper-block">
+                        <div class="catalog-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Индейка с овощами в соусе</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid"
+                                                src="./images/catalog-image/productIndianWithVegetables.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Ягненок с овощами в соусе</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid"
+                                                src="./images/catalog-image/producLambWithVegetables.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-list">
+                                            <div class="catalog-content-top-item">
+                                                <h2 class="catalog-content-top-item-title">Белая рыба в соусе</h2>
+                                                <div>
+                                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-content-list-center">
+                                                <img class="img-fluid" src="./images/catalog-image/productWhiteFish.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="catalog-content-bottom-item">
+                                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                                <button class="catalog-content-bottom-item-button">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Телятина в соусе</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid" src="./images/catalog-image/productVeal.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <button onclick="openCatalog(event, 'dryDogFood')" class="catalog-tablinks">
+                        Сухой корм для собак
+                        <hr class="catalog-tablinks-hr">
+                    </button>
+                    <div class="catalog-swiper-block">
+                        <div class="catalog-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Телятина с розмарином</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productVealWithRosemary.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Утка с яблоком</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productDuckWithApple.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Океаническая рыба</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productOceanFish.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Утка с яблоком</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productDuckWithApple.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <button onclick="openCatalog(event, 'filler')" class="catalog-tablinks">
+                        Наполнитель
+                        <hr class="catalog-tablinks-hr">
+                    </button>
+                    <div class="catalog-swiper-block">
+                        <div class="catalog-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Товар</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productIndianWithVegetables.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Товар</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/producLambWithVegetables.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Товар</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productWhiteFish.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog-content-list">
+                                        <div class="catalog-content-top-item">
+                                            <h2 class="catalog-content-top-item-title">Товар</h2>
+                                            <div>
+                                                <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-content-list-center">
+                                            <img class="img-fluid img-custom"
+                                                src="./images/catalog-image/productVeal.png" alt="">
+                                        </div>
+                                        <div class="catalog-content-bottom-item">
+                                            <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                            <button class="catalog-content-bottom-item-button">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="catalog-hr">
+            <div id="dryForCats" class="tab-content">
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Лосось</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productSalmon.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Ягненок</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productLamb.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Индейка с рисом</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productTurkeyWithRice.png"
+                                    alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Ягненок</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productLamb.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-add-item">
+                    <button class="catalog-add-more">
+                        Смотреть еще
+                    </button>
+                </div>
+            </div>
+            <div id="wetForCats" class="tab-content">
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Индейка с овощами в соусе</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid" src="./images/catalog-image/productIndianWithVegetables.png"
+                                    alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Ягненок с овощами в соусе</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid" src="./images/catalog-image/producLambWithVegetables.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Белая рыба в соусе</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid" src="./images/catalog-image/productWhiteFish.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Телятина в соусе</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid" src="./images/catalog-image/productVeal.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-add-item">
+                    <button class="catalog-add-more">
+                        Смотреть еще
+                    </button>
+                </div>
+            </div>
+            <div id="dryDogFood" class="tab-content">
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Телятина с розмарином</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom"
+                                    src="./images/catalog-image/productVealWithRosemary.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Утка с яблоком</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productDuckWithApple.png"
+                                    alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Океаническая рыба</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productOceanFish.png"
+                                    alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Утка с яблоком</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productDuckWithApple.png"
+                                    alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-add-item">
+                    <button class="catalog-add-more">
+                        Смотреть еще
+                    </button>
+                </div>
+            </div>
+            <div id="filler" class="tab-content">
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Товар</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom"
+                                    src="./images/catalog-image/productIndianWithVegetables.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Товар</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom"
+                                    src="./images/catalog-image/producLambWithVegetables.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Товар</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productWhiteFish.png"
+                                    alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="catalog-content-list">
+                            <div class="catalog-content-top-item">
+                                <h2 class="catalog-content-top-item-title">Товар</h2>
+                                <div>
+                                    <i class="fa-regular fa-heart catalog-my-icons"></i>
+                                </div>
+                            </div>
+                            <div class="catalog-content-list-center">
+                                <img class="img-fluid img-custom" src="./images/catalog-image/productVeal.png" alt="">
+                            </div>
+                            <div class="catalog-content-bottom-item">
+                                <div class="catalog-content-bottom-item-price">999 ₽</div>
+                                <button class="catalog-content-bottom-item-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-add-item">
+                    <button class="catalog-add-more">
+                        Смотреть еще
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="menu" class="menu-block">
+        <div class="shadow-block">
+        </div>
+        <div class="menu">
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="./home.html">Главная</a>
+            </nav>
+            <button class="menu-catalog-button xl-correct">
+                <div class="menu-catalog-button-item">
+                    <nav class="menu-content-button-text">
+                        Каталог
+                    </nav>
+                    <i class="fa-solid fa-chevron-down my-icons-menu"></i>
+                </div>
+                <div class="menu-catalog-tooltip">
+                    <nav class="menu-catalog-tooltip-text">Сухой корм для кошек</nav>
+                    <nav class="menu-catalog-tooltip-text">Влажный корм для кошек</nav>
+                    <nav class="menu-catalog-tooltip-text">Сухой корм для собак</nav>
+                    <nav class="menu-catalog-tooltip-text">Наполнитель для кошачьего туалета</nav>
+                </div>
+            </button>
+            <nav class="menu-content-text">
+                <a class="menu-content-link" href="./about.html">О нас</a>
+            </nav>
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="#">Новости</a>
+            </nav>
+            <nav class="menu-content-text">
+                <a class="menu-content-link" href="#">Акции</a>
+            </nav>
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="#">Интернет-магазин</a>
+            </nav>
+            <nav class="menu-content-text xl-correct">
+                <a class="menu-content-link" href="#">Новости</a>
+            </nav>
+            <nav class="menu-content-text">
+                <a class="menu-content-link" href="#">Благотворительность</a>
+            </nav>
+            <nav class="menu-content-text media-correct">
+                <a class="menu-content-link" href="./contacts.html">Контакты</a>
+            </nav>
+            <nav class="menu-content-contact-text">
+                <div><a class="menu-content-link-contact" href="./contacts.html">Доставка</a></div>
+                <div><a class="menu-content-link-contact" href="./contacts.html">Контакты</a></div>
+            </nav>
+            <hr class="menu-hr">
+            <div class="menu-contact">
+                <a class="menu-contact-link" href="#">
+                    <i class="fa-brands fa-telegram my-icons-menu-contact"></i>
+                </a>
+                <a class="menu-contact-link" href="#">
+                    <i class="fa-brands fa-vk my-icons-menu-contact"></i>
+                </a>
+                <a class="menu-contact-link" href="#">
+                    <i class="fa-brands fa-instagram my-icons-menu-contact"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="menuUserLog" class="menu-log">
+        <div class="shadow-block">
+        </div>
+        <div class="menu-user">
+            <div class="close-menu-user">
+                <button class="hamburger active">
+                    <span class="hamburger-box hamburger-close-box">
+                        <span class="hamburger-inner hamburger-close-reg-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <label class="registration-label" for="userEmail">войти или зарегистрироваться</label>
+            <form class="registration-input-block" action="#">
+                <input class="registration-input-item" type="email" id="userEmail" placeholder="email">
+                <input class="registration-input-item" type="password" id="userPassword" placeholder="пароль">
+                <button class="registration-button">Вход</button>
+            </form>
+            <a class="registration-link" href="./registration.html">Регистрация</a>
+            <div class="registration-info">Нажимая на кнопку «Получить код», я даю согласие на обработку своих
+                персональных данных в соответствии с политикой обработки персональных данных</div>
+        </div>
+    </div>
+    <div id="bagShopping" class="menu-log">
+        <div class="shadow-block">
+        </div>
+        <div class="bag-shopping">
+            <div class="bag-shopping-close-button">
+                <div class="close-button-item">
+                    <button class="hamburger active">
+                        <span class="hamburger-box hamburger-close-box">
+                            <span class="hamburger-inner hamburger-close-reg-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h2>Корзина</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div>
+                        <a href="./home.html"><img src="./images/labelFooter.svg" alt="footer"></a>
+                    </div>
+                    <p class="footer-text footer-item-position">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut
+                        labore et </p>
+                    <div class="footer-icons-position">
+                        <a class="footer-contact-link" href="#">
+                            <i class="fa-brands fa-telegram footer-icons"></i>
+                        </a>
+                        <a class="footer-contact-link" href="#">
+                            <i class="fa-brands fa-vk footer-icons"></i>
+                        </a>
+                        <a class="footer-contact-link" href="#">
+                            <i class="fa-brands fa-instagram footer-icons"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <h2 class="footer-title">Главная</h2>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="./about.html">О Нас</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Благотворительность</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Новости</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Акции</a>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <h2 class="footer-title">Интернет-магазин</h2>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Сухой корм для кошек</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Корм для собак</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Влажный корм для кошек</a>
+                    </div>
+                    <div class="footer-block-position">
+                        <a class="footer-text footer-link-correct" href="#">Наполнитель</a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2">
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="footer-text footer-block-position">
+                        101000, г. Город, ул. Улица , дом.х, антр. х, эт.
+                    </div>
+                    <div class="footer-block-position">
+                        <div>
+                            <a class="footer-text footer-number" href="tel:+79805520101">+7 (980) 552 01 01</a>
+                        </div>
+                        <div>
+                            <a class="footer-text" href="#">komdyr@borpet.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer-block-position">
+                        <div>
+                            <a class="footer-text footer-number" href="tel:+79805520101">+7 (980) 552 01 01</a>
+                        </div>
+                        <div>
+                            <a class="footer-text" href="#">manager@borpet.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-icons-position footer-icons-contact-media">
+                <a class="footer-contact-link" href="#">
+                    <i class="fa-brands fa-telegram footer-icons"></i>
+                </a>
+                <a class="footer-contact-link" href="#">
+                    <i class="fa-brands fa-vk footer-icons"></i>
+                </a>
+                <a class="footer-contact-link" href="#">
+                    <i class="fa-brands fa-instagram footer-icons"></i>
+                </a>
+            </div>
+            <div class="footer-politic-center">
+                <div class="footer-title-politic-media">
+                    <div>
+                        <a class=" footer-title-politic" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-6 col-xl-6">
+                    <div class="footer-title-politic-left">©2024 Company Name. All rights reserved</div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-6">
+                    <div>
+                        <a class="footer-title-politic-right" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/catalog.js"></script>
+
+
+</body>
+
+</html>
