@@ -29,7 +29,7 @@
     transform: translateY(-50%);
     background-color: #FFF;
     left: 0;
-    top: 50%;
+    top: 70%;
 }
 
 .hamburger-inner::before,
@@ -407,25 +407,299 @@
 
 /* START bag shopping */
 
+.bag-shopping-p {
+    position: fixed;
+    top: 104px;
+    right: -100%;
+    z-index: 2;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.bag-shopping-p.active {
+    right: 0%;
+    visibility: visible;
+}
+
 .bag-shopping {
-    max-width: 729px;
+    width: 729px;
     background-color: #FFF;
     position: fixed;
     top: 0%;
-    right: 0%;
+    right: -100%;
     z-index: 11;
     transition: all 0.5s ease-in-out;
+    padding: 0 0 50px 105px;
+}
+
+.bag-shopping.active {
+    right: 0%;
 }
 
 .bag-shopping-close-button {
     position: relative;
-    padding: 60px 0 50px 105px;
+    padding: 60px 0 20px;
 }
 
 .close-button-item {
     position: absolute;
     top: 46px;
     right: 52px;
+}
+
+.bag-shopping-empty {
+    display: block;
+    padding-bottom: 108px;
+}
+
+.bag-shopping-empty-text {
+    max-width: 260px;
+    font-family: 'HeliosCond';
+    font-size: 46px;
+    font-weight: 700;
+    color: #3F3124;
+    line-height: 112%;
+}
+
+.cart-block {
+    margin-bottom: 48px;
+}
+
+.cart-block-title {
+    font-family: 'HeliosCond';
+    font-size: 32px;
+    font-weight: 700;
+    color: #3F3124;
+    line-height: 150%;
+    padding-bottom: 39px;
+}
+
+.cart-block-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-list {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    max-width: 590px;
+}
+
+.cart-list-image-center {
+    align-content: center;
+    height: 139px;
+    background-color: #F0E5E3;
+    border-radius: 4px;
+    width: 139px;
+    text-align-last: center;
+}
+
+.cart-list-image {
+    height: 115px;
+}
+
+.cart-list-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 250px;
+}
+
+.cart-list-info-groop {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-list-info-name {
+    font-family: 'HeliosCond';
+    font-size: 20px;
+    font-weight: 700;
+    color: #3F3124;
+    line-height: 150%;
+}
+
+.cart-list-info-weight {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+    align-items: center;
+}
+
+.cart-list-item-top {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.cart-list-item-minus {
+    font-size: 20px;
+    color: #BFBFBF;
+    font-weight: 600;
+    width: 33px;
+    height: 33px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    text-align-last: center;
+    cursor: pointer;
+}
+
+.cart-list-item-counter {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #000000;
+}
+
+.cart-list-item-plus {
+    font-size: 20px;
+    color: #BFBFBF;
+    font-weight: 600;
+    width: 33px;
+    height: 33px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    text-align-last: center;
+    cursor: pointer;
+}
+
+.cart-list-item-price {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-block-item {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    max-width: 540px;
+    align-items: center;
+    padding: 35px 0 42px;
+}
+
+.cart-block-item-text {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-block-item-line {
+    border: 1px #000000;
+    border-top: none;
+    border-bottom-style: dashed;
+    height: 20px;
+    width: 50%;
+}
+
+.cart-block-item-price {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-block-total {
+    display: flex;
+    justify-content: space-between;
+    max-width: 540px;
+    align-items: center;
+}
+
+.cart-block-total-text {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-block-total-price {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #000000;
+}
+
+.cart-block-button {
+    margin: 42px 0 48px;
+    width: 549px;
+    padding: 16px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    background-color: #806356;
+}
+
+.popular-shop {
+    margin-bottom: 50px;
+}
+
+.popular-shop-title {
+    font-family: 'HeliosCond';
+    font-size: 32px;
+    font-weight: 700;
+    color: #3F3124;
+    line-height: 150%;
+    padding-bottom: 39px;
+}
+
+.bag-shopping-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.bag-shopping-swiper .my-swiper-button-prev {
+    position: absolute;
+    bottom: 73px;
+    right: 195px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.bag-shopping-swiper .my-swiper-button-next {
+    position: absolute;
+    bottom: 73px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
 }
 
 /* END bag shopping */
