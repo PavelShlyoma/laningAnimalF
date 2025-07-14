@@ -93,8 +93,10 @@
     color: #F4FAFF;
     font-size: 20px;
     font-family: "TT Commons Pro Trial Variable";
-
+    cursor: pointer;
 }
+
+
 
 .content-visible-sm {
     display: none;
@@ -1554,6 +1556,11 @@
 
 .catalog-my-icons {
     font-size: 20px;
+    cursor: pointer;
+}
+
+.catalog-my-icons.active {
+    color: red;
 }
 
 /* END catalog-list*/
