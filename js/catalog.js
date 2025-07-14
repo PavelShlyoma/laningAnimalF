@@ -131,7 +131,7 @@ class Product {
     }
 }
 
-const cartNum = document.querySelector(".header-user-items-coop-counter");
+const cartNum = document.querySelector("#cartCounter");
 const cardAddArr = Array.from(document.querySelectorAll(".catalog-content-bottom-item-button"))
 const popupCartBlock = document.querySelector(".cart-block");
 
@@ -202,8 +202,8 @@ myCart.products = cardAddArr.forEach((cardAdd) => {
         addCartButton.classList.add("active");
         removeCartButton.classList.add("active");
         addCartButton.addEventListener("click", () => {
-            getElementShop.classList.toggle('active');
-            getBagShop.classList.toggle('active');
+            getElementShop.classList.add('active');
+            getBagShop.classList.add('active');
             popupContainerFill()
         })
         console.log(myCart);
