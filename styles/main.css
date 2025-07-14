@@ -431,6 +431,8 @@
     z-index: 11;
     transition: all 0.5s ease-in-out;
     padding: 0 0 50px 105px;
+    overflow: auto;
+    max-height: 1000px;
 }
 
 .bag-shopping.active {
@@ -449,8 +451,12 @@
 }
 
 .bag-shopping-empty {
-    display: block;
+    display: none;
     padding-bottom: 108px;
+}
+
+.bag-shopping-empty.active {
+    display: block;
 }
 
 .bag-shopping-empty-text {
@@ -486,6 +492,7 @@
     align-items: center;
     gap: 27px;
     max-width: 590px;
+    padding: 0 0 39px;
 }
 
 .cart-list-image-center {
@@ -1448,10 +1455,40 @@
     height: 25px;
 }
 
+.catalog-content-group {
+    display: none;
+}
+
+.catalog-content-product-weight {
+    display: none;
+}
+
 .catalog-content-bottom-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.catalog-content-bottom-button {
+    width: 100%;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #1A202C;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    display: none;
+}
+
+.catalog-content-bottom-button.active {
+    display: block;
+}
+
+.catalog-content-bottom-item.active {
+    display: none;
 }
 
 .catalog-content-bottom-item-price {
