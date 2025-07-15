@@ -136,4 +136,30 @@ window.onload = function () {
       loop: true,
     },
   });
+
+  const bagShoppingSwiper = new Swiper('.bag-shopping-swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 60,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.my-swiper-button-next',
+      prevEl: '.my-swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      loop: true,
+    },
+  });
+
 }

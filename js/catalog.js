@@ -445,3 +445,14 @@ myCartLikes.products = cartLikesAddArr.forEach((cardAdd) => {
         cartIcons.classList.toggle("active")
     })
 })
+
+// add content tab
+
+const catalogAddArr = Array.from(document.querySelectorAll(".catalog-add-more"))
+
+catalogAddArr.forEach((buttonAdd) => {
+    buttonAdd.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+    })
+})

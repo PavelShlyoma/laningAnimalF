@@ -432,8 +432,8 @@
     right: -100%;
     z-index: 11;
     transition: all 0.5s ease-in-out;
-    padding: 0 0 50px 105px;
-    overflow: auto;
+    padding: 0 75px 50px 105px;
+    overflow-x: hidden;
     max-height: 1000px;
 }
 
@@ -663,52 +663,6 @@
     border: none;
     border-radius: 4px;
     background-color: #806356;
-}
-
-.popular-shop {
-    margin-bottom: 50px;
-}
-
-.popular-shop-title {
-    font-family: 'HeliosCond';
-    font-size: 32px;
-    font-weight: 700;
-    color: #3F3124;
-    line-height: 150%;
-    padding-bottom: 39px;
-}
-
-.bag-shopping-swiper {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-    display: block;
-}
-
-.bag-shopping-swiper .my-swiper-button-prev {
-    position: absolute;
-    bottom: 73px;
-    right: 195px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 15;
-    font-size: 24px;
-}
-
-.bag-shopping-swiper .my-swiper-button-next {
-    position: absolute;
-    bottom: 73px;
-    right: 110px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 15;
-    font-size: 24px;
 }
 
 /* END bag shopping */
@@ -1226,6 +1180,40 @@
     height: 100%;
 }
 
+.bag-shopping-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    padding: 0 0 30px 0;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    max-width: 548px;
+}
+
+.bag-shopping-swiper .my-swiper-button-prev {
+    position: absolute;
+    top: -51px;
+    right: 85px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.bag-shopping-swiper .my-swiper-button-next {
+    position: absolute;
+    top: -51px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
 .news-swiper .my-swiper-button-prev {
     position: absolute;
     bottom: 73px;
@@ -1564,3 +1552,85 @@
 }
 
 /* END catalog-list*/
+
+/* SRART popular*/
+
+.popular-shop {
+    margin-bottom: 50px;
+}
+
+.popular-shop-title {
+    font-family: 'HeliosCond';
+    font-size: 32px;
+    font-weight: 700;
+    color: #3F3124;
+    line-height: 150%;
+    padding-bottom: 39px;
+}
+
+.popular-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-swiper-top {
+    height: 139px;
+    background-color: #F0E5E3;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.popular-swiper-name {
+    color: #000000;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-align: center;
+    height: 48px;
+    align-content: center;
+}
+
+.popular-swiper-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-swiper-price {
+    color: #000000;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+}
+
+.popular-swiper-weight {
+    color: #000000;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+}
+
+.popular-link-catalog {
+    background-color: #F0E5E3;
+    border-radius: 4px;
+    color: #806356;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    padding: 16px 0;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* END popular*/
