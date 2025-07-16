@@ -1398,6 +1398,7 @@
     letter-spacing: -1px;
     transition: all 0.2s ease-in-out;
     position: relative;
+    height: 68px;
 }
 
 .catalog-tablinks.active {
@@ -1408,7 +1409,7 @@
 .catalog-tablinks-hr {
     display: none;
     position: absolute;
-    top: 146%;
+    top: 125%;
     width: 100%;
     left: 0%;
     height: 4px;
@@ -1427,6 +1428,8 @@
     padding: 19px 24px 24px;
     box-sizing: border-box;
     height: 388px;
+    text-decoration: none;
+    display: block;
 }
 
 .catalog-content-top-item {
@@ -1551,6 +1554,10 @@
     color: red;
 }
 
+.cart-link {
+    text-decoration: none;
+}
+
 /* END catalog-list*/
 
 /* SRART popular*/
@@ -1572,6 +1579,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .popular-swiper-top {

@@ -283,11 +283,19 @@
         display: none;
     }
 
+    .tab-content.active {
+        display: none;
+    }
+
     .catalog-hr {
         display: none;
     }
 
     .catalog-tablinks-hr {
+        display: none;
+    }
+
+    .catalog-tablinks.active .catalog-tablinks-hr {
         display: none;
     }
 

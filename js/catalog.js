@@ -178,36 +178,29 @@ myCart.products = cardAddArr.forEach((cardAdd) => {
         const product = new Product(card);
         const savedCart = JSON.parse(localStorage.getItem("cart"));
         myCart.products = savedCart.products;
-        const productId = product.id;
-        if ((myCart.products.length == 0)) {
+        let check = false;
+        for (const arr of myCart.products) {
+            if (arr.id == product.id) {
+                arr.num = arr.num + 1;
+                check = true;
+            }
+        }
+        if (check == false) {
             myCart.addProduct(product);
-        } else {
-            let check = false;
-            for (const arr of myCart.products) {
-                if (arr.id == productId) {
-                    arr.num = arr.num + 1;
-                    check = true;
-                }
-            }
-            if (check == false) {
-                myCart.addProduct(product);
-            }
         }
         localStorage.setItem("cart", JSON.stringify(myCart));
         cartNum.textContent = myCart.count;
         popupContainerFill()
         const addCartButton = card.querySelector(".catalog-content-bottom-button");
         const removeCartButton = card.querySelector(".catalog-content-bottom-item");
-        addCartButton.setAttribute("data-add-cart-button", product.id);
-        removeCartButton.setAttribute("data-remove-cart-button", product.id)
         addCartButton.classList.add("active");
         removeCartButton.classList.add("active");
-        addCartButton.addEventListener("click", () => {
+        addCartButton.addEventListener("click", (e) => {
+            e.preventDefault();
             getElementShop.classList.add('active');
             getBagShop.classList.add('active');
             popupContainerFill()
         })
-        console.log(myCart);
     })
 })
 
@@ -222,6 +215,11 @@ function popupContainerFill() {
         const cartEmpty = document.querySelector(".bag-shopping-empty");
         cartEmpty.classList.remove("active")
         const productsHTML = myCart.products.map((product) => {
+
+            const link = document.createElement("a");
+            link.classList.add("cart-link");
+            link.href = './product.html';
+
             const productItem = document.createElement("li");
             productItem.classList.add("cart-list");
 
@@ -309,8 +307,10 @@ function popupContainerFill() {
                 myCart.removeProduct(index);
                 let addCartButton = document.querySelector(`[data-add-cart-button="${deleteItemId}"]`);
                 let removeCartButton = document.querySelector(`[data-remove-cart-button="${deleteItemId}"]`);
-                addCartButton.classList.remove("active");
-                removeCartButton.classList.remove("active");
+                if (addCartButton.classList.contains("active")) {
+                    addCartButton.classList.remove("active");
+                    removeCartButton.classList.remove("active");
+                }
                 localStorage.setItem("cart", JSON.stringify(myCart));
                 cartNum.textContent = myCart.count;
                 popupContainerFill()
@@ -329,6 +329,7 @@ function popupContainerFill() {
             productPrice.classList.add("cart-list-item-price")
             productPrice.innerHTML = toCurrency((toNum(product.price) * product.num));
 
+            link.appendChild(productItem);
             productItem.appendChild(productWrap1);
             productItem.appendChild(productWrap2);
             productItem.appendChild(productWrap3);
@@ -346,7 +347,7 @@ function popupContainerFill() {
             productDeleteWrap1.appendChild(productDeleteWrap2);
             productDeleteWrap2.appendChild(productDeleteWrap3);
 
-            return productItem;
+            return link;
         })
 
         const cartTitle = document.createElement("h2");
@@ -423,21 +424,16 @@ myCartLikes.products = cartLikesAddArr.forEach((cardAdd) => {
         const product = new Product(card);
         const savedLikesCart = JSON.parse(localStorage.getItem("cartLikes"));
         myCartLikes.products = savedLikesCart.products;
-        const productId = product.id;
-        if ((myCartLikes.products.length == 0)) {
+        let check = false;
+        for (const arr of myCartLikes.products) {
+            if (arr.id == product.id) {
+                let index = myCartLikes.products.findIndex(el => el.id === product.id);
+                myCartLikes.removeProduct(index);
+                check = true;
+            }
+        }
+        if (check == false) {
             myCartLikes.addProduct(product);
-        } else {
-            let check = false;
-            for (const arr of myCartLikes.products) {
-                if (arr.id == productId) {
-                    let index = myCartLikes.products.findIndex(el => el.id === productId);
-                    myCartLikes.removeProduct(index);
-                    check = true;
-                }
-            }
-            if (check == false) {
-                myCartLikes.addProduct(product);
-            }
         }
         localStorage.setItem("cartLikes", JSON.stringify(myCartLikes));
         cartLikes.textContent = myCartLikes.count;
@@ -446,13 +442,3 @@ myCartLikes.products = cartLikesAddArr.forEach((cardAdd) => {
     })
 })
 
-// add content tab
-
-const catalogAddArr = Array.from(document.querySelectorAll(".catalog-add-more"))
-
-catalogAddArr.forEach((buttonAdd) => {
-    buttonAdd.addEventListener("click", (e) => {
-        e.preventDefault();
-        
-    })
-})
