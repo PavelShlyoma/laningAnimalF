@@ -1180,6 +1180,40 @@
     height: 100%;
 }
 
+.products-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    padding: 0 0 30px 0;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    margin: 68px 0 102px;
+}
+
+.products-swiper .my-swiper-button-prev {
+    position: absolute;
+    top: -74px;
+    right: 71px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.products-swiper .my-swiper-button-next {
+    position: absolute;
+    top: -74px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
 .bag-shopping-swiper {
     margin-left: auto;
     margin-right: auto;
@@ -1642,3 +1676,171 @@
 }
 
 /* END popular*/
+
+/* START product html list*/
+
+.product {
+    overflow: hidden;
+}
+
+.product-title {
+    padding: 60px 0 37px;
+}
+
+.product-link {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #3F3124;
+    text-decoration: none;
+}
+
+.product-img-block {
+    background-color: #EEE6E4;
+    border-radius: 10px;
+    padding: 28px 0;
+    box-sizing: border-box;
+    height: 545px;
+    text-decoration: none;
+    text-align-last: center;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-group {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #3F3124;
+}
+
+.product-name {
+    font-family: 'HeliosCond';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #3F3124;
+    letter-spacing: 0.5px;
+}
+
+.product-appointment {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #3F3124;
+    letter-spacing: 0.15px;
+}
+
+.product-text {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #3F3124;
+    letter-spacing: 0.5px;
+}
+
+.product-weight {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #3F3124;
+    letter-spacing: 0.15px;
+}
+
+.product-bottom-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-botto-item-add-cart {
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #F4FAFF;
+    letter-spacing: 0.83px;
+    background-color: #806356;
+    border-radius: 10px;
+    padding: 20px 0;
+    width: 224px;
+    border: none;
+}
+
+.product-icons {
+    background-color: #806356;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    text-align-last: center;
+    align-content: center;
+    color: #F4FAFF;
+}
+
+.product-bottom-item-price {
+    padding: 0 0 0 65px;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 66px;
+    color: #3F3124;
+    letter-spacing: 0.5px;
+}
+
+.product-tablinks {
+    border: none;
+    background: none;
+    color: #747880;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    height: 68px;
+    width: 100%;
+}
+
+.product-tablinks.active {
+    color: #3F3124;
+    font-weight: 600;
+}
+
+.product-tablinks-hr {
+    display: none;
+    position: absolute;
+    top: 125%;
+    width: 100%;
+    left: 0%;
+    height: 4px;
+    background-color: #3F3124;
+    padding: 0px;
+    opacity: 1;
+}
+
+.product-tablinks.active .product-tablinks-hr {
+    display: block;
+}
+
+.proruct-hr {
+    margin: 35px 0 56px;
+}
+
+.product-tab-content-text {
+    margin: 0 0 67px;
+}
+
+/* END product html list*/

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-<link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/bootstrap-extend.css">
     <link rel="stylesheet" href="./styles/all.min.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <script src="./js/libs/swiper.js"></script>
+    <script src="./js/mySwiper.js"></script>
 </head>
 
 <body>
@@ -91,6 +95,270 @@
             </div>
         </div>
     </header>
+    <section class="product">
+        <div class="container">
+            <div class="product-title">
+                <a class="product-link" href="./home.html">Главная / </a><a class="product-link"
+                    href="./catalog.html">Каталог товаров / </a><span class="product-link">Влажный корм для кошек</span>
+            </div>
+            <div class="row gx-5">
+                <div class="col-6">
+                    <div class="product-img-block">
+                        <img class="img-fluid img-custom" src="./images/catalog-image/productIndianWithVegetables_1.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-info">
+                        <h2 class="product-group">Влажный корм для кошек</h2>
+                        <h3 class="product-name">Индейка с овощами в соусе</h3>
+                        <p class="product-appointment">Для стерилизованных котов и кошек</p>
+                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et </p>
+                        <div class="product-weight">85г</div>
+                        <div class="product-bottom-item">
+                            <button class="product-botto-item-add-cart">КУПИТЬ</button>
+                            <div>
+                                <i class="fa-regular fa-heart product-icons"></i>
+                            </div>
+                            <div class="product-bottom-item-price">999 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button onclick="openTabs(event, `productDescription`)" class="product-tablinks active">
+                        Описание
+                        <hr class="product-tablinks-hr">
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button onclick="openTabs(event, `productCompound`)" class="product-tablinks">
+                        Состав
+                        <hr class="product-tablinks-hr">
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button onclick="openTabs(event, `productProperties`)" class="product-tablinks">
+                        Свойства
+                        <hr class="product-tablinks-hr">
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button onclick="openTabs(event, `productRecommendations`)" class="product-tablinks">
+                        Рекомендации
+                        <hr class="product-tablinks-hr">
+                    </button>
+                </div>
+            </div>
+            <hr class="proruct-hr">
+            <div id="productDescription" class="tab-content active">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="productCompound" class="tab-content">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="productProperties" class="tab-content">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="productRecommendations" class="tab-content">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Похожие товары</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="products-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productOceanFish.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Океаническая рыба
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">3 кг</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productWhiteFish.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Белая рыба в соусе
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">3 кг</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productDuckWithApple.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Утка с яблоком
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">85гр</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productOceanFish.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Океаническая рыба
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">3 кг</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productOceanFish.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Океаническая рыба
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">3 кг</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productWhiteFish.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Белая рыба в соусе
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">3 кг</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productDuckWithApple.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Утка с яблоком
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">85гр</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular-slide" href="./product.html">
+                                    <div class="popular-swiper-top">
+                                        <img class="img-fluid img-custom"
+                                            src="./images/catalog-image/productOceanFish.png" alt="">
+                                    </div>
+                                    <div class="popular-swiper-name">
+                                        Океаническая рыба
+                                    </div>
+                                    <div class="popular-swiper-bottom">
+                                        <div class="popular-swiper-price">999 ₽</div>
+                                        <div class="popular-swiper-weight">3 кг</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-swiper-button-prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="my-swiper-button-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container"></div>
     <div id="menu" class="menu-block">
         <div class="shadow-block">
         </div>
@@ -99,10 +367,18 @@
                 <a class="menu-content-link" href="./home.html">Главная</a>
             </nav>
             <button class="menu-catalog-button xl-correct">
-                <nav class="menu-content-button-text">
-                    Каталог
-                </nav>
-                <i class="fa-solid fa-chevron-down my-icons-menu"></i>
+                <div class="menu-catalog-button-item">
+                    <nav class="menu-content-button-text">
+                        Каталог
+                    </nav>
+                    <i class="fa-solid fa-chevron-down my-icons-menu"></i>
+                </div>
+                <div class="menu-catalog-tooltip">
+                    <nav class="menu-catalog-tooltip-text">Сухой корм для кошек</nav>
+                    <nav class="menu-catalog-tooltip-text">Влажный корм для кошек</nav>
+                    <nav class="menu-catalog-tooltip-text">Сухой корм для собак</nav>
+                    <nav class="menu-catalog-tooltip-text">Наполнитель для кошачьего туалета</nav>
+                </div>
             </button>
             <nav class="menu-content-text">
                 <a class="menu-content-link" href="./about.html">О нас</a>
@@ -111,13 +387,13 @@
                 <a class="menu-content-link" href="#">Новости</a>
             </nav>
             <nav class="menu-content-text">
-                <a class="menu-content-link" href="#">Акции</a>
+                <div id="stockBtn" class="menu-content-link">Акции</div>
             </nav>
-            <nav class="menu-content-text media-correct">
-                <a class="menu-content-link" href="#">Интернет-магазин</a>
+            <nav id="shopBtn" class="menu-content-text media-correct">
+                <div class="menu-content-link">Интернет-магазин</div>
             </nav>
-            <nav class="menu-content-text xl-correct">
-                <a class="menu-content-link" href="#">Новости</a>
+            <nav id="newsBtn" class="menu-content-text xl-correct">
+                <div class="menu-content-link">Новости</div>
             </nav>
             <nav class="menu-content-text">
                 <a class="menu-content-link" href="#">Благотворительность</a>
@@ -165,8 +441,8 @@
                 персональных данных в соответствии с политикой обработки персональных данных</div>
         </div>
     </div>
-    <div id="bagShopping" class="menu-log">
-        <div class="shadow-block">
+    <div id="bagShopping" class="bag-shopping-p">
+        <div id="closeShop" class="shadow-block">
         </div>
         <div class="bag-shopping">
             <div class="bag-shopping-close-button">
@@ -178,10 +454,87 @@
                     </button>
                 </div>
             </div>
-            <div>
-                <h2>Корзина</h2>
-
+            <div class="bag-shopping-empty">
+                <h2 class="bag-shopping-empty-text">в корзине ничего нет...</h2>
             </div>
+            <div class="cart-block">
+            </div>
+            <section class="popular-shop">
+                <div class="popular-shop-title">Популярные товары</div>
+                <div class="bag-shopping-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom" src="./images/catalog-image/productOceanFish.png"
+                                        alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Океаническая рыба
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">3 кг</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom" src="./images/catalog-image/productWhiteFish.png"
+                                        alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Белая рыба в соусе
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">3 кг</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom"
+                                        src="./images/catalog-image/productDuckWithApple.png" alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Утка с яблоком
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">85гр</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom" src="./images/catalog-image/productOceanFish.png"
+                                        alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Океаническая рыба
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">3 кг</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-swiper-button-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="my-swiper-button-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <a class="popular-link-catalog" href="./catalog.html">Перейти к каталогу</a>
+            </section>
         </div>
     </div>
 
@@ -294,6 +647,7 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/menu.js"></script>
 
-    
+
 </body>
+
 </html>

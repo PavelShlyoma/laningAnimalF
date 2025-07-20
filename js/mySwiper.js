@@ -162,4 +162,29 @@ window.onload = function () {
     },
   });
 
+  const productSwiper = new Swiper('.products-swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 32,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.my-swiper-button-next',
+      prevEl: '.my-swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      loop: true,
+    },
+  });
+
 }
