@@ -36,17 +36,17 @@
                                 <button class="header-button">
                                     <i class="fa-regular fa-heart my-icons-header"></i>
                                 </button>
-                                <div class="header-user-items-coop-counter">
+                                <div id="likesCounter" class="header-user-items-coop-counter">
                                     0
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div class="header-user-items-coop">
-                                <button class="header-button">
+                                <button id="buttonBag" class="header-button">
                                     <i class="fa-solid fa-bag-shopping my-icons-header"></i>
                                 </button>
-                                <div class="header-user-items-coop-counter">
+                                <div id="cartCounter" class="header-user-items-coop-counter">
                                     0
                                 </div>
                             </div>
@@ -165,8 +165,8 @@
                 персональных данных в соответствии с политикой обработки персональных данных</div>
         </div>
     </div>
-    <div id="bagShopping" class="menu-log">
-        <div class="shadow-block">
+    <div id="bagShopping" class="bag-shopping-p">
+        <div id="closeShop" class="shadow-block">
         </div>
         <div class="bag-shopping">
             <div class="bag-shopping-close-button">
@@ -178,10 +178,87 @@
                     </button>
                 </div>
             </div>
-            <div>
-                <h2>Корзина</h2>
-
+            <div class="bag-shopping-empty">
+                <h2 class="bag-shopping-empty-text">в корзине ничего нет...</h2>
             </div>
+            <div class="cart-block">
+            </div>
+            <section class="popular-shop">
+                <div class="popular-shop-title">Популярные товары</div>
+                <div class="bag-shopping-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom" src="./images/catalog-image/productOceanFish.png"
+                                        alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Океаническая рыба
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">3 кг</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom" src="./images/catalog-image/productWhiteFish.png"
+                                        alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Белая рыба в соусе
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">3 кг</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom"
+                                        src="./images/catalog-image/productDuckWithApple.png" alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Утка с яблоком
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">85гр</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="popular-slide" href="./product.html">
+                                <div class="popular-swiper-top">
+                                    <img class="img-fluid img-custom" src="./images/catalog-image/productOceanFish.png"
+                                        alt="">
+                                </div>
+                                <div class="popular-swiper-name">
+                                    Океаническая рыба
+                                </div>
+                                <div class="popular-swiper-bottom">
+                                    <div class="popular-swiper-price">999 ₽</div>
+                                    <div class="popular-swiper-weight">3 кг</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-swiper-button-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="my-swiper-button-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <a class="popular-link-catalog" href="./catalog.html">Перейти к каталогу</a>
+            </section>
         </div>
     </div>
 

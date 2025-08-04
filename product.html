@@ -40,17 +40,17 @@
                                 <button class="header-button">
                                     <i class="fa-regular fa-heart my-icons-header"></i>
                                 </button>
-                                <div class="header-user-items-coop-counter">
+                                <div id="likesCounter" class="header-user-items-coop-counter">
                                     0
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div class="header-user-items-coop">
-                                <button class="header-button">
+                                <button id="buttonBag" class="header-button">
                                     <i class="fa-solid fa-bag-shopping my-icons-header"></i>
                                 </button>
-                                <div class="header-user-items-coop-counter">
+                                <div id="cartCounter" class="header-user-items-coop-counter">
                                     0
                                 </div>
                             </div>
@@ -130,25 +130,25 @@
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button onclick="openTabs(event, `productDescription`)" class="product-tablinks active">
+                    <button onclick="openTabs(event, `productDescription`)" class="product-tablinks active tablinks">
                         Описание
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
                 <div class="col-3">
-                    <button onclick="openTabs(event, `productCompound`)" class="product-tablinks">
+                    <button onclick="openTabs(event, `productCompound`)" class="product-tablinks tablinks">
                         Состав
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
                 <div class="col-3">
-                    <button onclick="openTabs(event, `productProperties`)" class="product-tablinks">
+                    <button onclick="openTabs(event, `productProperties`)" class="product-tablinks tablinks">
                         Свойства
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
                 <div class="col-3">
-                    <button onclick="openTabs(event, `productRecommendations`)" class="product-tablinks">
+                    <button onclick="openTabs(event, `productRecommendations`)" class="product-tablinks tablinks">
                         Рекомендации
                         <hr class="product-tablinks-hr">
                     </button>
