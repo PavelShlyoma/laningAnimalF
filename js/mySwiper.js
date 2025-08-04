@@ -187,4 +187,30 @@ window.onload = function () {
     },
   });
 
+  const charitySwiper = new Swiper('.charity-swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.my-swiper-button-next',
+      prevEl: '.my-swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      loop: true,
+    },
+  });
+
+
 }

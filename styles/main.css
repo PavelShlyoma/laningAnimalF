@@ -1192,6 +1192,48 @@
     margin: 68px 0 102px;
 }
 
+.charity-swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding-bottom: 167px;
+}
+
+.charity-swiper .my-swiper-button-prev {
+    position: absolute;
+    bottom: 93px;
+    right: 195px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.charity-swiper .my-swiper-button-next {
+    position: absolute;
+    bottom: 93px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 24px;
+}
+
+.charity-swiper .swiper-pagination {
+    text-align: left;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    bottom: 93px;
+}
+
 .products-swiper .my-swiper-button-prev {
     position: absolute;
     top: -74px;
@@ -1812,6 +1854,7 @@
     position: relative;
     height: 68px;
     width: 100%;
+    margin: 74px 0 0;
 }
 
 .product-tablinks.active {
@@ -1844,3 +1887,262 @@
 }
 
 /* END product html list*/
+
+/* START about html list*/
+
+/* START histori section*/
+
+.histori {
+    padding: 40px 0 70px;
+}
+
+.about-title {
+    justify-self: center;
+    padding-bottom: 10px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1px;
+}
+
+.about-text {
+    padding: 0 0 78px;
+    color: black;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 530px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-years {
+    max-width: 1053px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-button {
+    color: #FFF;
+    font-family: 'HeliosCond';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1px;
+    width: 112px;
+    height: 112px;
+    background-color: #806356;
+    border: none;
+    border-radius: 30px;
+}
+
+.about-years-content {
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-years-content-text {
+    color: black;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    height: 240px;
+    max-width: 336px;
+    text-align: center;
+}
+
+.mission-block {
+    background-color: #806356;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.missiom-block-title {
+    color: #FFF;
+    font-family: 'HeliosCond';
+    font-size: 40px;
+    font-weight: 700;
+    padding: 45px 0 24px 0;
+}
+
+.mission-block-text {
+    color: #FFF;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 45px;
+}
+
+/* END histori section*/
+
+/* START info-block-content section*/
+
+.info-block-content {
+    padding: 70px 0 0;
+}
+
+.info-block-content-title {
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.info-block-content-text {
+    max-width: 750px;
+    color: #1A202C;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+}
+
+.info-block-content-xl {
+    padding: 112px 0 143px;
+    position: relative;
+}
+
+.info-block-content-xl-text {
+    padding-left: 559px;
+    justify-self: center;
+    color: #1A202C;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+}
+
+.info-block-content-image {
+    place-self: center;
+}
+
+.info-block-content-image-xl {
+    position: absolute;
+    left: -10%;
+    top: -3%;
+}
+
+.info-block-content-media {
+    display: none;
+}
+
+.values-xl {
+    background-color: #F0E5E3;
+    overflow: hidden;
+}
+
+.values-content {
+    max-width: 1312px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 112px;
+}
+
+.values-title {
+    padding: 82px 0 31px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 40px;
+    font-weight: 700;
+    color: #806356;
+}
+
+.values-media {
+    display: none;
+}
+
+.values-text {
+    color: #1A202C;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+    max-width: 655px;
+    padding-bottom: 90px;
+}
+
+.values-image-block-xl {
+    background-image: url(../images/about-image/dogs.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 592px;
+    height: 605px;
+    margin: 0 -64px;
+}
+
+/* END info-block-content section*/
+
+/* START charity section*/
+
+.charity {
+    padding: 30px 0 0;
+}
+
+.charity-title {
+    justify-self: center;
+    padding-bottom: 10px;
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -3px;
+}
+
+.charity-text {
+    padding: 0 0 48px;
+    color: #1A202C;
+    font-family: 'HeliosCond';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 530px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.charity-swiper-image-block {
+    margin-bottom: 35px;
+    max-width: 252px;
+    height: 247px;
+}
+
+.charity-swiper-title {
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+
+.charity-swiper-text {
+    color: #1A202C;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+    max-width: 986px;
+}
+
+/* END charity section*/
+
+/* END about html list*/
