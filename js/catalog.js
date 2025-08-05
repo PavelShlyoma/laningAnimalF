@@ -1,6 +1,35 @@
-const cardAddArr = Array.from(document.querySelectorAll(".catalog-content-bottom-item-button"))
+// quare param
+
+const urlParams = new URLSearchParams(window.location.search);
+const data = urlParams.get('data');
+const tabs = urlParams.get('tabs')
+if (data) {
+    const openTabsReady = (data, tabs) => {
+        let i, tabcontent, tablinks, openTabs, openButtons;
+
+        openButtons = document.getElementById(`${data}`);
+
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        openTabs = document.getElementById(`${tabs}`);
+        openTabs.className += " active";
+        openButtons.className += " active";
+    }
+
+    openTabsReady(data, tabs);
+}
 
 // cart shopping
+
+const cardAddArr = Array.from(document.querySelectorAll(".catalog-content-bottom-item-button"))
 
 myCart.products = cardAddArr.forEach((cardAdd) => {
     cardAdd.addEventListener("click", (e) => {

@@ -101,37 +101,37 @@
             <h3 class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et</h3>
             <div class="about-years">
-                <button class="about-button">
+                <button onclick="openTabs(event, `2022`)" class="about-button tablinks">
                     2022
                 </button>
                 <div>
                     <img class="img-fluid" src="./images/about-image/buttonLine.png" alt="">
                 </div>
-                <button class="about-button">
+                <button onclick="openTabs(event, `2023`)" class="about-button tablinks">
                     2023
                 </button>
                 <div>
                     <img class="img-fluid" src="./images/about-image/buttonLine.png" alt="">
                 </div>
-                <button class="about-button">
+                <button onclick="openTabs(event, `2024`)" class="about-button tablinks">
                     2024
                 </button>
             </div>
             <div class="about-years-content">
-                <div class="about-years-content-text" id="2022">
+                <div class="tab-content about-years-content-text active" id="2022">
                     В 2022 году было запущено производство сухих кормов для домашних животных эконом-сегмента под
                     торговой маркой «Эстер». Производственная база находится в промышленной зоне города Борисоглебска в
                     Воронежской области. Цех оснащён всем необходимым оборудованием, включая двушнековый экструдер
                     мощностью 500 кг/ч и автоматическую упаковочную линию. Общая площадь производственных помещений
                     составляет 1000 м².
                 </div>
-                <div class="about-years-content-text" id="2023">
+                <div class="tab-content about-years-content-text" id="2023">
                     В 2023 году ассортимент кормов был расширен, в результате чего появились сухие и влажные корма
                     премиум и суперпремиум класса под торговой маркой Амири. Данные корма разработаны с учётом рецептур
                     и технологий европейских специалистов, одобрены ветеринарами и адаптированы для российского
                     производства.
                 </div>
-                <div class="about-years-content-text" id="2024">
+                <div class="tab-content about-years-content-text" id="2024">
                     С начала 2024 году выполняется капитальный ремонт производственного цеха и запланировано
                     строительство дополнительных складских помещений более 1000 м².
                 </div>
@@ -450,28 +450,40 @@
                 <a class="menu-content-link" href="./home.html">Главная</a>
             </nav>
             <button class="menu-catalog-button xl-correct">
-                <nav class="menu-content-button-text">
-                    Каталог
-                </nav>
-                <i class="fa-solid fa-chevron-down my-icons-menu"></i>
+                <div class="menu-catalog-button-item">
+                    <nav class="menu-content-button-text">
+                        Каталог
+                    </nav>
+                    <i class="fa-solid fa-chevron-down my-icons-menu"></i>
+                </div>
+                <div class="menu-catalog-tooltip">
+                    <a href="./catalog.html?data=dataOpen1&tabs=dryForCats" class="menu-catalog-tooltip-text">Сухой корм
+                        для кошек</a>
+                    <a href="./catalog.html?data=dataOpen2&tabs=wetForCats" class="menu-catalog-tooltip-text">Влажный
+                        корм для кошек</a>
+                    <a href="./catalog.html?data=dataOpen3&tabs=dryDogFood" class="menu-catalog-tooltip-text">Сухой корм
+                        для собак</a>
+                    <a href="./catalog.html?data=dataOpen4&tabs=filler" class="menu-catalog-tooltip-text">Наполнитель
+                        для кошачьего туалета</a>
+                </div>
             </button>
             <nav class="menu-content-text">
                 <a class="menu-content-link" href="./about.html">О нас</a>
             </nav>
             <nav class="menu-content-text media-correct">
-                <a class="menu-content-link" href="#">Новости</a>
+                <a class="menu-content-link" href="./home.html?news=news">Новости</a>
             </nav>
             <nav class="menu-content-text">
-                <a class="menu-content-link" href="#">Акции</a>
+                <a href="./home.html?stock=stock" class="menu-content-link">Акции</a>
             </nav>
             <nav class="menu-content-text media-correct">
-                <a class="menu-content-link" href="#">Интернет-магазин</a>
+                <a href="./catalog.html" class="menu-content-link">Интернет-магазин</a>
             </nav>
             <nav class="menu-content-text xl-correct">
-                <a class="menu-content-link" href="#">Новости</a>
+                <a href="./home.html?news=news" class="menu-content-link">Новости</a>
             </nav>
             <nav class="menu-content-text">
-                <a class="menu-content-link" href="#">Благотворительность</a>
+                <a class="charity-button menu-content-link" href="./about.html">Благотворительность</a>
             </nav>
             <nav class="menu-content-text media-correct">
                 <a class="menu-content-link" href="./contacts.html">Контакты</a>
@@ -636,37 +648,41 @@
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
-                    <h2 class="footer-title">Главная</h2>
+                    <a class="footer-link-defolt" href="./home.html">
+                        <h2 class="footer-title">Главная</h2>
+                    </a>
                     <div class="footer-block-position">
                         <a class="footer-text footer-link-correct" href="./about.html">О Нас</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Благотворительность</a>
+                        <a class="charity-button footer-text footer-link-correct" href="./about.html">Благотворительность</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Новости</a>
+                        <a class="footer-text footer-link-correct" href="./home.html?news=news">Новости</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Акции</a>
+                        <a id="stockFooterBtn" class="footer-text footer-link-correct" href="./home.html?stock=stock">Акции</a>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
                     <h2 class="footer-title">Интернет-магазин</h2>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Сухой корм для кошек</a>
+                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Корм для собак</a>
+                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Влажный корм для кошек</a>
+                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="#">Наполнитель</a>
+                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
                     </div>
                 </div>
                 <div class="col-12 col-xl-2">
-                    <h2 class="footer-title">Контакты</h2>
+                    <a class="footer-link-defolt" href="./contacts.html">
+                        <h2 class="footer-title">Контакты</h2>
+                    </a>
                     <div class="footer-text footer-block-position">
                         101000, г. Город, ул. Улица , дом.х, антр. х, эт.
                     </div>
@@ -721,6 +737,7 @@
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/about.js"></script>
 </body>
 
 </html>

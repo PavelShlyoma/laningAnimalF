@@ -23,6 +23,16 @@ getMenuElement.addEventListener('click', (event) => {
 
 // END menu/ mobile-menu
 
+// START tooltip click
+
+const menuButtonTooltip = document.querySelector(".menu-catalog-button")
+
+menuButtonTooltip.addEventListener(`click`, () => {
+    menuButtonTooltip.classList.toggle("active");
+})
+
+// END tooltip click
+
 const getButtonsElemntsIcons = document.getElementById('buttonLog')
 
 const getMenuUserLogElement = document.getElementById('menuUserLog');

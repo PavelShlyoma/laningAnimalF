@@ -253,6 +253,7 @@
     font-size: 16px;
     line-height: 150%;
     padding: 5px 0;
+    text-decoration: none;
 }
 
 .menu-catalog-tooltip-text:hover {
@@ -270,11 +271,16 @@
 }
 
 .menu-catalog-button:hover {
+    opacity: 1;
+}
+
+.menu-catalog-button.active {
     padding-bottom: 0;
 }
 
-.menu-catalog-button:hover .menu-catalog-tooltip {
-    display: block;
+.menu-catalog-button.active .menu-catalog-tooltip {
+    display: flex;
+    flex-direction: column;
     opacity: 1;
 }
 
@@ -765,6 +771,11 @@
     display: none;
 }
 
+.footer-link-defolt {
+    text-decoration: none;
+    display: block;
+}
+
 /* END Footer */
 
 /* START banner */
@@ -921,6 +932,11 @@
 
 .shop {
     margin: 0 0 105px;
+}
+
+.shop-link {
+    text-decoration: none;
+    display: block;
 }
 
 .shop-title {
@@ -1938,6 +1954,17 @@
     background-color: #806356;
     border: none;
     border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-button:hover {
+    width: 122px;
+    height: 122px;
+}
+
+.about-button.active {
+    width: 127px;
+    height: 127px;
 }
 
 .about-years-content {
@@ -1955,6 +1982,18 @@
     height: 240px;
     max-width: 336px;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+}
+
+.about-years-content-text.tab-content {
+    display: block;
+}
+
+.about-years-content-text.tab-content.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .mission-block {
@@ -2146,3 +2185,108 @@
 /* END charity section*/
 
 /* END about html list*/
+
+/* START contacts section*/
+
+.contacts {
+    padding: 40px 0 64px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contacts-vectore {
+    position: absolute;
+    top: 0%;
+    left: 93%;
+}
+
+.contacts-title {
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 42px;
+    line-height: 150%;
+    text-align: center;
+
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 75px;
+}
+
+.contacts-content-name {
+    color: #3F3124;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 121%;
+    padding: 12px 0 0;
+}
+
+.contacts-content-post {
+    color: #3F3124;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.contacts-number {
+    color: #3F3124;
+}
+
+.contacts-text {
+    color: #3F3124;
+    padding-bottom: 55px;
+}
+
+.contacts-content-text {
+    color: #3F3124;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    padding-bottom: 10px;
+}
+
+.legal-details {
+    padding-bottom: 72px;
+}
+
+.legal-details-title {
+    color: #FFFFFF;
+    background-color: #806356;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 201%;
+    padding: 8.5px 0;
+    text-align: center;
+}
+
+.legal-details-speakers {
+    height: 66.5px;
+    border: solid 1px;
+    border-color: #806356;
+}
+
+.delivery {
+    padding-bottom: 136px;
+}
+
+.delivery-content {
+    color: black;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    padding-top: 24px;
+}
+
+/* END contacts section*/
