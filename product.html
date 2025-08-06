@@ -102,60 +102,69 @@
                     href="./catalog.html">Каталог товаров / </a><span class="product-link">Влажный корм для кошек</span>
             </div>
             <div class="row gx-5">
-                <div class="col-6">
+                <div class="col-12 col-xl-6 product-xl">
                     <div class="product-img-block">
                         <img class="img-fluid img-custom" src="./images/catalog-image/productIndianWithVegetables_1.png"
                             alt="">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-xl-6">
                     <div class="product-info">
                         <h2 class="product-group">Влажный корм для кошек</h2>
                         <h3 class="product-name">Индейка с овощами в соусе</h3>
                         <p class="product-appointment">Для стерилизованных котов и кошек</p>
+                        <div class="product-img-block product-image-media">
+                            <img class="img-fluid img-custom"
+                                src="./images/catalog-image/productIndianWithVegetables_1.png" alt="">
+                        </div>
                         <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut
                             labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et </p>
-                        <div class="product-weight">85г</div>
-                        <div class="product-bottom-item">
-                            <button class="product-botto-item-add-cart">КУПИТЬ</button>
+                        <div class="product-weight product-xl">85г</div>
+                        <div class="product-media">
+                            <div class="product-bottom-item-price">999 ₽</div>
+                            <div class="product-weight">85г</div>
+                        </div>
+                        <div class="product-bottom-item product-xl">
+                            <button class="product-bottom-item-add-cart">КУПИТЬ</button>
                             <div>
                                 <i class="fa-regular fa-heart product-icons"></i>
                             </div>
                             <div class="product-bottom-item-price">999 ₽</div>
                         </div>
+                        <button class="product-bottom-item-add-cart product-media-button">КУПИТЬ</button>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-4 col-xl-3">
                     <button onclick="openTabs(event, `productDescription`)" class="product-tablinks active tablinks">
                         Описание
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
-                <div class="col-3">
+                <div class="col-4 col-xl-3">
                     <button onclick="openTabs(event, `productCompound`)" class="product-tablinks tablinks">
                         Состав
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
-                <div class="col-3">
+                <div class="col-4 col-xl-3">
                     <button onclick="openTabs(event, `productProperties`)" class="product-tablinks tablinks">
                         Свойства
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
-                <div class="col-3">
-                    <button onclick="openTabs(event, `productRecommendations`)" class="product-tablinks tablinks">
+                <div class="col-4 col-xl-3">
+                    <button onclick="openTabs(event, `productRecommendations`)" class="product-tablinks tablinks product-xl">
                         Рекомендации
                         <hr class="product-tablinks-hr">
                     </button>
                 </div>
             </div>
             <hr class="proruct-hr">
-            <div id="productDescription" class="tab-content active">
+            <div id="productDescription" class="product-tab-content tab-content active">
                 <div class="row">
                     <div class="col-12">
                         <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -171,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div id="productCompound" class="tab-content">
+            <div id="productCompound" class="product-tab-content tab-content">
                 <div class="row">
                     <div class="col-12">
                         <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -187,7 +196,7 @@
                     </div>
                 </div>
             </div>
-            <div id="productProperties" class="tab-content">
+            <div id="productProperties" class="product-tab-content tab-content">
                 <div class="row">
                     <div class="col-12">
                         <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -203,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div id="productRecommendations" class="tab-content">
+            <div id="productRecommendations" class="product-tab-content tab-content">
                 <div class="row">
                     <div class="col-12">
                         <p class="product-tab-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -219,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <h3>Похожие товары</h3>
+            <h3 class="similar-product">Похожие товары</h3>
             <div class="row">
                 <div class="col-12">
                     <div class="products-swiper">
@@ -572,28 +581,34 @@
                         <a class="footer-text footer-link-correct" href="./about.html">О Нас</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./about.html?charity=charity">Благотворительность</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./about.html?charity=charity">Благотворительность</a>
                     </div>
                     <div class="footer-block-position">
                         <a class="footer-text footer-link-correct" href="./home.html?news=news">Новости</a>
                     </div>
                     <div class="footer-block-position">
-                        <a id="stockFooterBtn" class="footer-text footer-link-correct" href="./home.html?stock=stock">Акции</a>
+                        <a id="stockFooterBtn" class="footer-text footer-link-correct"
+                            href="./home.html?stock=stock">Акции</a>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
                     <h2 class="footer-title">Интернет-магазин</h2>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
                     </div>
                 </div>
                 <div class="col-12 col-xl-2">

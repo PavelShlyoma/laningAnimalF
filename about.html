@@ -101,16 +101,16 @@
             <h3 class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et</h3>
             <div class="about-years">
-                <button onclick="openTabs(event, `2022`)" class="about-button tablinks">
+                <button onclick="openTabs(event, `2022`)" class="about-button tablinks active">
                     2022
                 </button>
-                <div>
+                <div class="histori-image-block">
                     <img class="img-fluid" src="./images/about-image/buttonLine.png" alt="">
                 </div>
                 <button onclick="openTabs(event, `2023`)" class="about-button tablinks">
                     2023
                 </button>
-                <div>
+                <div class="histori-image-block">
                     <img class="img-fluid" src="./images/about-image/buttonLine.png" alt="">
                 </div>
                 <button onclick="openTabs(event, `2024`)" class="about-button tablinks">
@@ -163,18 +163,13 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-md-12">
-                    <div class="info-block-content-image">
+                    <div class="info-block-content-image info-block-content-image-media">
                         <img class="img-fluid" src="./images/about-image/cormCat.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="info-block-content-media">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-12">
-                        <div class="info-block-content-image">
-                            <img class="img-fluid" src="./images/about-image/fishCat.png" alt="">
-                        </div>
-                    </div>
                     <div class="col-12">
                         <div class="info-block-content-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -194,6 +189,11 @@
                             minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                             veniam, quis nostrud exercitation
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="info-block-content-image">
+                            <img class="img-fluid" src="./images/about-image/fishCat.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -222,27 +222,38 @@
                     veniam, quis nostrud exercitation
                 </div>
             </div>
-            <div class="values-media">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-7">
-                        <h3 class="values-title">Наши ценности:</h3>
-                        <div class="values-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation</div>
-                    </div>
-                    <div class="col-5">
-                        <div class="values-image-block">
-                            <img class="img-fluid" src="./images/about-image/dogs.png" alt="">
+        </div>
+        <div class="media-background">
+            <div class="container">
+                <div class="values-media">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-12 col-xl-7">
+                            <h3 class="values-title">Наши ценности:</h3>
+                            <div class="values-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
+                                exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation</div>
+                        </div>
+                        <div class="col-12 col-xl-5">
+                            <div class="values-image-block">
+                                <img class="img-fluid" src="./images/about-image/dogs.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -282,7 +293,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catInArms.png" alt="">
@@ -299,7 +310,7 @@
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                             </div>
                         </div>
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catBottom.png" alt="">
@@ -318,7 +329,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catInArms.png" alt="">
@@ -335,7 +346,7 @@
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                             </div>
                         </div>
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catBottom.png" alt="">
@@ -354,7 +365,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catInArms.png" alt="">
@@ -371,7 +382,7 @@
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                             </div>
                         </div>
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catBottom.png" alt="">
@@ -390,7 +401,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catInArms.png" alt="">
@@ -407,7 +418,7 @@
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                             </div>
                         </div>
-                        <div class="row g-5">
+                        <div class="row g-2">
                             <div class="col-12 col-xl-3">
                                 <div class="charity-swiper-image-block">
                                     <img src="./images/about-image/catBottom.png" alt="">
@@ -655,28 +666,34 @@
                         <a class="footer-text footer-link-correct" href="./about.html">О Нас</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="charity-button footer-text footer-link-correct" href="./about.html">Благотворительность</a>
+                        <a class="charity-button footer-text footer-link-correct"
+                            href="./about.html">Благотворительность</a>
                     </div>
                     <div class="footer-block-position">
                         <a class="footer-text footer-link-correct" href="./home.html?news=news">Новости</a>
                     </div>
                     <div class="footer-block-position">
-                        <a id="stockFooterBtn" class="footer-text footer-link-correct" href="./home.html?stock=stock">Акции</a>
+                        <a id="stockFooterBtn" class="footer-text footer-link-correct"
+                            href="./home.html?stock=stock">Акции</a>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
                     <h2 class="footer-title">Интернет-магазин</h2>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
                     </div>
                 </div>
                 <div class="col-12 col-xl-2">

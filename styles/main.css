@@ -1214,10 +1214,9 @@
     position: relative;
     overflow: hidden;
     list-style: none;
-    padding: 0;
+    padding: 0 0 167px;
     z-index: 1;
     display: block;
-    padding-bottom: 167px;
 }
 
 .charity-swiper .my-swiper-button-prev {
@@ -1741,6 +1740,18 @@
     overflow: hidden;
 }
 
+.product-media {
+    display: none;
+}
+
+.product-media-button {
+    display: none;
+}
+
+.product-image-media {
+    display: none;
+}
+
 .product-title {
     padding: 60px 0 37px;
 }
@@ -1822,7 +1833,7 @@
     align-items: center;
 }
 
-.product-botto-item-add-cart {
+.product-bottom-item-add-cart {
     font-family: 'TT Commons Pro Trial Variable';
     font-size: 26px;
     font-weight: 400;
@@ -1902,6 +1913,15 @@
     margin: 0 0 67px;
 }
 
+.similar-product {
+    font-family: 'HeliosCond';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #3F3124;
+    letter-spacing: -0.5px;
+}
+
 /* END product html list*/
 
 /* START about html list*/
@@ -1968,7 +1988,7 @@
 }
 
 .about-years-content {
-    padding: 26px 0;
+    padding: 26px 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -2192,6 +2212,10 @@
     padding: 40px 0 64px;
     overflow: hidden;
     position: relative;
+}
+
+.iframe-media {
+    display: none;
 }
 
 .contacts-vectore {
