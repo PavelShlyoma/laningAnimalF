@@ -33,13 +33,20 @@ menuButtonTooltip.addEventListener(`click`, () => {
 
 // END tooltip click
 
-const getButtonsElemntsIcons = document.getElementById('buttonLog')
+const getButtonsElemntsIcons = document.getElementById('buttonLog');
+
+const getButtonsElemntsIconsMobile = document.getElementById('buttonLogMobile')
 
 const getMenuUserLogElement = document.getElementById('menuUserLog');
 
 const getMenuUserLog = document.querySelector('.menu-user');
 
 getButtonsElemntsIcons.addEventListener('click', () => {
+    getMenuUserLogElement.classList.toggle('active');
+    getMenuUserLog.classList.toggle('active');
+})
+
+getButtonsElemntsIconsMobile.addEventListener('click', () => {
     getMenuUserLogElement.classList.toggle('active');
     getMenuUserLog.classList.toggle('active');
 })
@@ -66,6 +73,8 @@ getMenuUserLogElement.addEventListener('click', (event) => {
 
 const getButtonsElemntsIconsShop = document.getElementById('buttonBag');
 
+const getButtonsElemntsIconsShopMobile = document.getElementById('buttonBagMobile');
+
 const getElementShop = document.getElementById('bagShopping');
 
 const getBagShop = document.querySelector('.bag-shopping');
@@ -84,6 +93,13 @@ getButtonsElemntsIconsShop.addEventListener('click', () => {
     getBagShop.classList.toggle('active');
     popupContainerFill()
 })
+
+getButtonsElemntsIconsShopMobile.addEventListener('click', () => {
+    getElementShop.classList.toggle('active');
+    getBagShop.classList.toggle('active');
+    popupContainerFill()
+})
+
 bagShoppingClose.addEventListener("click", () => {
     getElementShop.classList.toggle('active');
     getBagShop.classList.toggle('active');

@@ -1,3 +1,38 @@
+@media (max-width: 450px) {
+    .cart-list-image-center {
+        display: none;
+    }
+
+    .cart-list-item-price {
+        font-size: 18px;
+    }
+
+    .cart-list-info-name {
+        font-size: 18px;
+    }
+
+    .cart-block-item-price {
+        font-size: 18px;
+    }
+
+    .cart-block-item-text {
+        font-size: 18px;
+    }
+
+    .cart-block-total-text {
+        font-size: 18px;
+    }
+
+    .cart-block-button {
+        font-weight: 400;
+        margin: 20px 0;
+    }
+
+    .cart-block-total-price {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 768px) {
     /* START header */
 
@@ -29,6 +64,30 @@
 
     .hamburger.active .hamburger-inner::after {
         transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .close-menu-user .hamburger-inner::before {
+        background-color: #FFF;
+    }
+
+    .close-menu-user .hamburger-inner::after {
+        background-color: #FFF;
+    }
+
+    .close-button-item .hamburger-inner::before {
+        background-color: #FFF;
+    }
+
+    .close-button-item .hamburger-inner::after {
+        background-color: #FFF;
+    }
+
+    .cart-list-item-remove .hamburger-inner::before {
+        background-color: #FFF;
+    }
+
+    .cart-list-item-remove .hamburger-inner::after {
+        background-color: #FFF;
     }
 
     .hamburger-inner::before {
@@ -65,6 +124,7 @@
         width: 100%;
         height: 100%;
         overflow: auto;
+        max-width: 100%;
     }
 
     .menu-content-text {
@@ -106,7 +166,7 @@
     }
 
     .menu-contact {
-        margin-left: 62px;
+        margin-left: 45px;
     }
 
     .my-icons-menu-contact {
@@ -300,7 +360,7 @@
     }
 
     .catalog {
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
     /* END catalog html */
@@ -448,6 +508,137 @@
         letter-spacing: 0.5px;
         color: #0D1521;
         margin-bottom: 97.5px;
+    }
+
+    .menu-user {
+        top: 5%;
+        max-width: 100%;
+        background-color: #3F3124;
+    }
+
+    .registration-link {
+        color: #FFF;
+    }
+
+    .registration-info {
+        color: #FFF;
+    }
+
+    .close-menu-user {
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .menu-user {
+        padding: 26px 35px 50px 35px;
+    }
+
+    .registration-label {
+        font-size: 30px;
+    }
+
+    .bag-shopping {
+        width: 100%;
+        top: 5%;
+        padding: 26px 35px 50px 35px;
+        background-color: #3F3124;
+    }
+
+    .close-button-item {
+        right: 30px;
+    }
+
+    .bag-shopping-swiper .my-swiper-button-prev {
+        display: none;
+    }
+
+    .bag-shopping-swiper .my-swiper-button-next {
+        display: none;
+    }
+
+    .bag-shopping-empty {
+        padding-bottom: 30px;
+    }
+
+    .bag-shopping-empty-text {
+        font-size: 30px;
+        color: #FFF;
+    }
+
+    .popular-shop-title {
+        font-size: 24px;
+        color: #FFF;
+    }
+
+    .popular-shop {
+        margin-bottom: 25px;
+    }
+
+    .cart-block-button {
+        width: 100%;
+    }
+
+    .cart-list {
+        gap: 5px;
+    }
+
+    .cart-list-info-groop {
+        color: #FFF;
+    }
+
+    .cart-list-info-weight {
+        color: #FFF;
+    }
+
+    .cart-list-item-counter {
+        color: #FFF;
+    }
+
+
+    .cart-list-item-price {
+        color: #FFF;
+    }
+
+    .cart-list-info-name {
+        color: #FFF;
+    }
+
+    .cart-block-item-price {
+        color: #FFF;
+    }
+
+    .cart-block-item-text {
+        color: #FFF;
+    }
+
+    .cart-block-total-text {
+        color: #FFF;
+    }
+
+    .cart-block-total-price {
+        color: #FFF;
+    }
+
+    .popular-swiper-name {
+        color: #FFF;
+    }
+
+    .popular-swiper-price {
+        color: #FFF;
+    }
+
+    .popular-swiper-weight {
+        color: #FFF;
+    }
+
+    .registratioin-block {
+        padding: 20px 0 35px;
+    }
+
+    .registratioin-block-title {
+        padding-bottom: 30px;
+        font-size: 30px;
+        text-align: center;
     }
 
 }
@@ -646,7 +837,8 @@
 
     .product-media-button {
         display: block;
-        width: 100%;;
+        width: 100%;
+        ;
     }
 
     .product-img-block {

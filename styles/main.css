@@ -352,6 +352,7 @@
     border-color: #486284;
     border-radius: 4px;
     border: solid 1px;
+    width: 100%;
 }
 
 .registration-input-item::placeholder {
@@ -2314,3 +2315,114 @@
 }
 
 /* END contacts section*/
+
+/* START registration html*/
+
+.registratioin-block {
+    padding: 64px 0 77px 32px;
+}
+
+.registratioin-block-title {
+    color: #3F3124;
+    font-family: 'HeliosCond';
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 64px;
+    line-height: 150%;
+    letter-spacing: -1px;
+}
+
+.registratioin-block-form {
+    display: flex;
+    gap: 16px;
+    max-width: 541px;
+    flex-direction: column;
+}
+
+.registratioin-block-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 24px;
+}
+
+.registratioin-block-checkbox .registration-block-info {
+    padding-bottom: 0;
+}
+
+.registration-block-info {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'TT Commons Pro Trial Variable';
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #555555;
+    padding-bottom: 24px;
+}
+
+.registratioin-block-button-item {
+    display: flex;
+    gap: 8px;
+}
+
+.registratioin-block-button-prev {
+    color: #486284;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    height: 62px;
+    width: 264px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F0E5E3;
+    margin-top: 10px;
+}
+
+.registratioin-block-button-next {
+    color: #FFFFFF;
+    font-family: 'TT Commons Pro Trial Variable';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    height: 62px;
+    width: 264px;
+    border: none;
+    border-radius: 4px;
+    background-color: #806356;
+    margin-top: 10px;
+}
+
+.password {
+    position: relative;
+}
+
+.password-view {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 22px;
+    color: #898989;
+    cursor: pointer;
+}
+
+.password-view:hover {
+    opacity: 0.8;
+}
+
+.registratioin-input-item-correct {
+    margin-bottom: 49px;
+}
+
+.password {
+    margin-bottom: 12px;
+}
+
+
+/* END registration html*/

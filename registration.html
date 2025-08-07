@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-<link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/bootstrap-extend.css">
     <link rel="stylesheet" href="./styles/all.min.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <script src="./js/libs/swiper.js"></script>
+    <script src="./js/mySwiper.js"></script>
 </head>
 
 <body>
@@ -64,18 +67,18 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-5">
-                        <div class="center-item">
+                        <a href="./home.html" class="center-item">
                             <img class="header-label-image-sm img-fluid" src="./images/labelHomeSm.svg" alt="Амири">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <div class="center-item">
+                            <i id="buttonBagMobile" class="fa-solid fa-cart-shopping my-icons-header-mobile"></i>
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="center-item">
-                            <i class="fa-solid fa-cart-shopping my-icons-header-mobile"></i>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="center-item">
-                            <i class="fa-solid fa-user my-icons-header-mobile my-icons-user"></i>
+                            <i id="buttonLogMobile" class="fa-solid fa-user my-icons-header-mobile my-icons-user"></i>
                         </div>
                     </div>
                     <div class="col-2">
@@ -91,6 +94,41 @@
             </div>
         </div>
     </header>
+    <section class="registratioin-block">
+        <div class="container">
+            <h2 class="registratioin-block-title">Регистрация</h2>
+            <form class="registratioin-block-form" action="#">
+                <input id="userRegName" class="registration-input-item" type="text" placeholder="Имя*">
+                <input id="userRegLastName" class="registration-input-item" type="text" placeholder="Фамилия*">
+                <input id="userRegTel" class="registration-input-item" type="tel" placeholder="Ваш мобильный телефон*">
+                <input id="userRegEmail" class="registration-input-item" type="email" placeholder="Ваш email*">
+                <p class="registration-block-info">Укажите e-mail, к которому у Вас есть доступ. Для завершения регистрации
+                    Вам будет необходимо подтвердить свой e-mail.</p>
+                <input id="userRegCity" class="registration-input-item registratioin-input-item-correct" type="text" placeholder="Ваш город">
+                <div class="password">
+                    <input id="userRegPassword" class="registration-input-item" type="password" placeholder="Придумайте пароль">
+                    <i class="fa-solid fa-eye-slash password-view"></i>
+                </div>
+                <div class="password">
+                    <input id="userRegPasswordRepeat" class="registration-input-item" type="password" placeholder="Повторите пароль">
+                    <i class="fa-solid fa-eye-slash password-view"></i>
+                </div>
+                <div class="registratioin-block-checkbox">
+                    <input checked type="checkbox">
+                    <p class="registration-block-info">Подтверждаю, что я ознакомлен и согласен с условиями <u>политики
+                        конфиденциальности</u> и <u>обработки персональных данных</u></p>
+                </div>
+                <div class="registratioin-block-button-item">
+                    <button class="registratioin-block-button-prev">
+                        Назад
+                    </button>
+                    <button class="registratioin-block-button-next">
+                        Далее
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
     <div id="menu" class="menu-block">
         <div class="shadow-block">
         </div>
@@ -304,28 +342,34 @@
                         <a class="footer-text footer-link-correct" href="./about.html">О Нас</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./about.html?charity=charity">Благотворительность</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./about.html?charity=charity">Благотворительность</a>
                     </div>
                     <div class="footer-block-position">
                         <a class="footer-text footer-link-correct" href="./home.html?news=news">Новости</a>
                     </div>
                     <div class="footer-block-position">
-                        <a id="stockFooterBtn" class="footer-text footer-link-correct" href="./home.html?stock=stock">Акции</a>
+                        <a id="stockFooterBtn" class="footer-text footer-link-correct"
+                            href="./home.html?stock=stock">Акции</a>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
                     <h2 class="footer-title">Интернет-магазин</h2>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen1&tabs=dryForCats">Сухой корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen3&tabs=dryDogFood">Корм для собак</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen2&tabs=wetForCats">Влажный корм для кошек</a>
                     </div>
                     <div class="footer-block-position">
-                        <a class="footer-text footer-link-correct" href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
+                        <a class="footer-text footer-link-correct"
+                            href="./catalog.html?data=dataOpen4&tabs=filler">Наполнитель</a>
                     </div>
                 </div>
                 <div class="col-12 col-xl-2">
@@ -386,7 +430,9 @@
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/registration.js"></script>
 
-    
+
 </body>
+
 </html>
